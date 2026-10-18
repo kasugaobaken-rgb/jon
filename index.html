@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080a09">
+<meta name="description" content="あなた自身が刑事となり、殺人事件の捜査に参加する体験型ミステリー。">
+<title>ジョン・ドゥの最終陳述 — JOHN DOE'S FINAL STATEMENT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23080a09'/%3E%3Ctext x='7' y='46' font-size='44' fill='%23d93636' font-family='serif'%3EJ%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#080b0a;--fg:#e6e4db;--muted:#78817c;--red:#d1443c;--line:#29312c;--mono:'Space Mono',monospace;--serif:'Noto Serif JP','Yu Mincho',serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;font-size:14px;-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:2px solid var(--red);outline-offset:5px}button{border-radius:0}::selection{background:#a6312d;color:#fff}.mono,.utility{font-family:var(--mono);font-size:10px;letter-spacing:1px}.red{color:var(--red)}.muted{color:var(--muted)}.skip{position:fixed;top:-60px;left:20px;padding:12px;background:var(--fg);color:var(--bg);z-index:100}.skip:focus{top:10px}.noise{position:fixed;inset:0;pointer-events:none;opacity:.055;z-index:20;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath filter='url(%23n)' opacity='.8' d='M0 0h180v180H0z'/%3E%3C/svg%3E")}.scanline{position:fixed;inset:0;background:repeating-linear-gradient(transparent 0px,transparent 3px,#0002 4px);pointer-events:none;z-index:19}.header{height:94px;display:flex;align-items:center;justify-content:space-between;padding:0 4.3%;border-bottom:1px solid var(--line);position:relative;z-index:5;background:#080b0a}.brand{display:flex;align-items:center;gap:14px}.brand-mark{font-family:Georgia,serif;font-weight:bold;font-size:36px;letter-spacing:-3px}.brand-mark>span{color:var(--red)}.brand-caption{font-family:var(--mono);font-size:8px;line-height:1.7;letter-spacing:1.4px;color:#a1aaa3}.header nav{display:flex;gap:33px;font-family:var(--mono);font-size:10px;letter-spacing:1px}.header nav small{color:var(--red);margin-right:6px;font-size:8px}.header nav a:hover{color:var(--red)}.utility{background:none;border:0;color:#9aa49c;font-size:9px;padding:10px 0}.utility b{font-weight:400;color:var(--fg);margin-left:7px}.sound-bars{color:var(--red);letter-spacing:1px;margin-right:7px}.hero{position:relative;min-height:780px;height:calc(100svh - 94px);max-height:1040px;overflow:hidden;background:radial-gradient(ellipse at 78% 45%,#18312545,transparent 56%)}.hero-grid{position:absolute;inset:0;background-image:linear-gradient(#80978707 1px,transparent 1px),linear-gradient(90deg,#80978707 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(90deg,transparent,#000)}.hero-top{position:absolute;top:27px;left:4.3%;right:4.3%;display:flex;justify-content:space-between;font-size:9px;color:#7f8d82}.status-dot{display:inline-block;width:5px;height:5px;background:var(--red);margin-right:9px;box-shadow:0 0 12px #c03c3c99}.hero-copy{position:absolute;z-index:3;left:7.1%;top:50%;width:51%;transform:translateY(-48%);pointer-events:none}.hero-copy a{pointer-events:auto}.eyebrow{font-family:var(--mono);letter-spacing:2.5px;font-size:10px;color:#a2aaa3;display:flex;align-items:center;gap:12px}.line{height:1px;width:27px;background:var(--red)}.hero-tagline{font-family:var(--serif);font-size:15px;letter-spacing:.25em;margin:35px 0 18px;color:#b2b8ae}h1{font-family:var(--serif);font-weight:800;margin:0;line-height:1.25;letter-spacing:-.06em}.title-small{display:block;font-size:clamp(29px,3.7vw,60px);letter-spacing:.025em;margin-bottom:8px}.title-main{display:block;font-size:clamp(74px,8.6vw,139px);position:relative;white-space:nowrap;text-shadow:1px 0 #c5473a88}.title-main:after{content:attr(data-text);position:absolute;left:0;top:0;color:#b8c8ba;clip-path:inset(45% 0 52% 0);animation:glitch 8s infinite;opacity:0}.english-title{font-family:var(--mono);font-size:clamp(8px,.8vw,12px);letter-spacing:.32em;color:var(--red);margin:23px 0 27px}.hero-question{font-family:var(--serif);font-size:14px;letter-spacing:.16em;color:#bfc3b8;margin-bottom:32px}.primary-button{display:flex;align-items:center;gap:14px;min-height:56px;padding:0 20px;background:#b92e29;color:#fff;border:1px solid #d1443c;font-size:12px;letter-spacing:1px;width:282px;transition:background .25s,box-shadow .25s}.primary-button:hover{background:#d3443b;box-shadow:0 0 30px #c32e2d22}.button-icon{font-family:var(--mono);font-size:20px}.arrow{margin-left:auto;font-size:22px}.hero-date{display:grid;grid-template-columns:1fr;gap:5px;margin-top:31px}.hero-date>.mono{font-size:8px;color:#6e7a71}.hero-date strong{font-family:var(--mono);font-size:15px;font-weight:400;letter-spacing:2px}.hero-date>span:last-child{font-size:10px;color:#7e8a80;letter-spacing:.05em}.evidence-board{position:absolute;right:4.4%;top:12%;bottom:12%;width:42%;max-width:650px;perspective:1000px}.board-caption,.board-bottom{display:flex;justify-content:space-between;color:#6f8074;font-size:7px}.board-caption{margin-bottom:15px}.board-bottom{margin-top:18px}.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px 28px;transform:rotate(-3deg);padding:0 15px}.profile{padding:0;background:#0c1410;border:1px solid #3b4940;position:relative;box-shadow:0 10px 28px #0008;text-align:left;transition:filter .3s,transform .3s,border-color .3s;filter:brightness(.7) saturate(.65);min-width:0;animation:float 9s ease-in-out infinite}.profile:hover{filter:brightness(1.15);border-color:var(--red);transform:translateY(-5px)!important;z-index:4}.profile-2{transform:translateY(13px);animation-delay:-2s}.profile-3{transform:translateX(-12px);animation-delay:-4s}.profile-4{transform:translate(3px,18px);animation-delay:-1s}.profile-5{transform:translateX(9px);animation-delay:-5s}.profile-6{transform:translateY(20px);animation-delay:-3s}.window-bar{height:19px;display:flex;align-items:center;gap:4px;padding:0 7px;border-bottom:1px solid #3b4940;font-family:var(--mono);font-size:6px;color:#a3aea6}.window-bar i{width:4px;height:4px;background:#99453e;border-radius:50%}.window-bar i:nth-child(2){background:#7c7252}.window-bar i:nth-child(3){background:#426954}.window-bar>span{margin-left:4px}.window-bar b{margin-left:auto;font-size:10px;font-weight:400}.portrait,.file-photo,.dialog-photo{display:block;background-image:url('legacy-5794274e6619.jpg');background-size:550% auto;background-repeat:no-repeat;background-color:#1a2620}.portrait{aspect-ratio:1.52}.p1{background-position:9.6% 6.2%}.p2{background-position:89% 6.2%}.p3{background-position:6.3% 43%}.p4{background-position:91.9% 43%}.p5{background-position:12% 78.5%}.p6{background-position:85.6% 78.5%}.profile-foot{display:flex;align-items:center;justify-content:space-between;padding:6px 7px;border-top:1px solid #39483c;font-family:var(--mono);font-size:6px;color:#a5b0a6}.profile-foot em{font-style:normal;color:#b66c5c;font-size:5px}.error-window{position:absolute;left:18%;top:43%;width:66%;background:#0b100ef2;border:1px solid #686f61;transform:rotate(3deg);z-index:3;box-shadow:0 10px 60px #000c;pointer-events:none;animation:error-drift 11s ease-in-out infinite}.error-bar{display:flex;justify-content:space-between;padding:8px 10px;border-bottom:1px solid #50574d;font-family:var(--mono);font-size:8px;color:#a78e7b}.error-body{text-align:center;padding:10px 12px 13px;font-family:var(--mono)}.error-number{display:block;font-size:clamp(50px,6.5vw,98px);line-height:1.15;color:#98a294;font-weight:700;letter-spacing:-5px;text-shadow:3px 0 #a4423b55,-2px 0 #50857655}.error-body>span:nth-child(2){font-size:11px;letter-spacing:3px;color:#a0aa9c}.error-body p{font-size:6px;color:#768373;margin:10px 0}.error-ok{display:inline-block;padding:5px 34px;border:1px solid #485444;font-size:7px;color:#9ba594}.hero-bottom{position:absolute;bottom:29px;left:4.3%;right:4.3%;display:flex;align-items:center;justify-content:space-between;color:#68776c;font-size:8px}.hero-bottom a{color:#9aa79b;display:flex;align-items:center;gap:20px}.hero-bottom a span{font-size:19px;animation:scroll-down 2.5s infinite}.hero-coordinates{opacity:.6}.ticker{border-top:1px solid #66302a;border-bottom:1px solid #66302a;overflow:hidden;background:#1e1110;color:#bd7a6d;padding:15px 0;font-family:var(--mono);font-size:10px;letter-spacing:3px}.ticker>div{width:max-content;animation:marquee 38s linear infinite}.ticker span{color:#d73f36;margin:0 37px}.section{padding:74px 7.1% 90px;scroll-margin-top:30px}.section-label{display:flex;justify-content:space-between;padding-bottom:24px;border-bottom:1px solid var(--line)}.section-label .mono{font-size:9px}.story-layout{display:grid;grid-template-columns:1fr 1fr;gap:8%;padding:60px 0}.story-heading h2{font-family:var(--serif);font-size:clamp(32px,4.3vw,62px);line-height:1.65;font-weight:500;letter-spacing:.05em;margin:25px 0}.story-heading h2 span{color:#bc4c40}.case-stamp{display:inline-block;border:1px solid #a44a3e77;color:#a44a3e88;transform:rotate(-9deg);text-align:center;font-size:24px;padding:6px 12px;line-height:1.2;letter-spacing:3px;margin:16px 0}.case-stamp small{font-size:8px;letter-spacing:2px}.story-copy{padding:4px 0 0 8%;border-left:1px solid var(--line)}.story-copy p{font-family:var(--serif);font-size:13px;line-height:2.6;letter-spacing:.06em;color:#99a399;margin:0 0 27px}.story-copy p.story-lead{font-size:23px;line-height:1.9;color:#dddccf}.story-copy .story-ending{color:#b9c0b3}.story-ending strong{font-weight:500;color:#e4e4d8}.concept-note{display:block;font-size:9px;line-height:1.9;color:#718074}.terminal{border:1px solid var(--line);background:#0b100d}.terminal-top{padding:10px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:8px;color:#728473}.terminal-top span:first-child{color:#99a790}.terminal-content{padding:24px;font-size:10px;color:#9aa88f;line-height:2.3;min-height:97px}.terminal-cursor{color:#b3473c;animation:blink 1.5s step-end infinite}.files-section{background:#0c100d;border-top:1px solid #1f2921;border-bottom:1px solid #1f2921}.section-heading{display:flex;align-items:end;justify-content:space-between;margin:42px 0 32px;gap:20px}.section-heading h2{font-family:var(--serif);font-size:30px;font-weight:500;letter-spacing:.05em;margin:0}.section-heading p{font-size:10px;color:#7d8a7c;letter-spacing:.07em;margin:0 0 5px}.file-list{border-top:1px solid #394136}.file-list>button{display:flex;align-items:center;width:100%;padding:16px 21px 16px 10px;gap:24px;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);transition:background .25s,padding .25s}.file-list>button:hover{background:#162018;padding-left:18px}.file-num{font-family:var(--mono);color:#8f705e;font-size:10px;width:20px}.file-photo{width:70px;height:56px;flex-shrink:0;filter:grayscale(1);opacity:.7}.file-name{font-family:var(--serif);font-size:18px;letter-spacing:.1em}.file-name>span{display:block;font-family:var(--mono);font-size:7px;color:#7b8a78;letter-spacing:2px;margin-top:7px}.file-state{font-family:var(--mono);font-size:8px;letter-spacing:1px;color:#6d7d6b;margin-left:auto}.file-plus{color:#bf4c3f;font-size:22px;margin-left:28px}.file-note{margin-top:20px}.information-section{background:radial-gradient(ellipse at 5% 100%,#7c29281a,transparent 65%)}.information-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:10%;margin-top:50px}.information-layout h2{font-family:var(--serif);font-weight:500;font-size:36px;line-height:1.8;letter-spacing:.06em;margin:22px 0 25px}.information-caption{color:#879482;font-size:12px;line-height:2.2;letter-spacing:.07em}.event-details dl{margin:0 0 27px}.event-details dl>div{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:19px 0}.event-details dt{font-size:11px;color:#96a28f}.event-details dd{font-family:var(--serif);font-size:17px;margin:0;text-align:right;letter-spacing:.05em}.event-details dd>span{display:block;font-family:var(--mono);font-size:7px;letter-spacing:1px;color:#76876e;margin-top:5px}.ticket-button{width:100%}footer{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:22px;padding:34px 4.3%;border-top:1px solid var(--line)}.footer-title{font-family:var(--serif);font-size:18px;letter-spacing:.08em}.footer-controls{display:flex;gap:30px;justify-content:flex-end}footer>p{font-size:9px;line-height:2.1;color:#6f7e6b;margin:0;grid-column:1/-1}footer>p .mono{font-size:7px;letter-spacing:1px}dialog{padding:0;border:1px solid #56634e;background:#101610;color:var(--fg);width:min(690px,calc(100% - 36px));max-height:90svh}dialog::backdrop{background:#020503dd;backdrop-filter:blur(7px)}.dialog-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 15px;border-bottom:1px solid var(--line);color:#9eab95;font-size:9px}.dialog-bar button{background:none;border:0;font-size:26px;line-height:1;color:#b65b4b;padding:0 4px}.dialog-content{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:35px}.dialog-photo{aspect-ratio:.95;filter:saturate(.5);border:1px solid #4c5b47;align-self:start}.dialog-content h2,.ticket-content h2{font-family:var(--serif);font-size:25px;font-weight:500}.dialog-content .eyebrow{font-size:8px;letter-spacing:1px}.dialog-content blockquote{font-family:var(--serif);font-size:15px;line-height:2.2;color:#c5ceba;margin:22px 0;border-left:2px solid #9c4739;padding-left:15px}.dialog-details{font-family:var(--mono);font-size:8px;line-height:2;color:#85967b}.dialog-details>div{display:flex;justify-content:space-between}.dialog-details dd{margin:0}.dialog-bottom{width:100%;border:0;border-top:1px solid var(--line);padding:16px 24px;background:#182115;font-size:11px;display:flex;justify-content:space-between}.dialog-bottom:hover{background:#273320}.ticket-content{padding:35px}.ticket-content p{color:#a0ae93;font-size:12px;line-height:2.3}.ticket-content .red{color:var(--red)}body.dialog-open{overflow:hidden}.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:none}@keyframes glitch{0%,94%,98%,100%{opacity:0;transform:translateX(0)}95%{opacity:.6;transform:translateX(-5px)}97%{opacity:.6;transform:translateX(5px)}}@keyframes marquee{to{transform:translateX(-50%)}}@keyframes blink{50%{opacity:0}}@keyframes scroll-down{50%{transform:translateY(5px)}}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -6px}}@keyframes error-drift{0%,100%{translate:0 0}50%{translate:0 7px}}
+body.motion-off *,body.motion-off *:before,body.motion-off *:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.motion-off .reveal{opacity:1;transform:none}
+@media(min-width:1500px){.evidence-board{top:11%;bottom:10%}.hero-copy{left:9%}.portrait{aspect-ratio:1.5}.evidence-grid{gap:20px 30px}}
+@media(max-width:1050px){.header{padding:0 4%;height:80px}.header nav{gap:18px;font-size:9px}.brand-caption{font-size:6px}.hero{height:730px;min-height:730px}.hero-copy{left:5%;width:53%}.title-main{font-size:9.4vw}.title-small{font-size:4.1vw}.evidence-board{right:3%;width:43%;top:19%}.evidence-grid{gap:14px}.error-window{top:36%}.english-title{letter-spacing:.2em}.hero-coordinates{display:none}.story-layout{gap:6%}.story-copy{padding-left:8%}.section-heading h2{font-size:25px}.section-heading p{font-size:9px}.information-layout h2{font-size:28px}.information-layout{gap:7%}.section{padding-left:6%;padding-right:6%}}
+@media(max-width:700px){.header{height:72px;padding:0 6%}.brand-mark{font-size:30px}.brand-caption{font-size:6px}.header nav{display:none}.utility{font-size:8px}.hero{height:auto;min-height:0;padding:91px 6% 70px;overflow:hidden;display:flex;flex-direction:column}.hero-top{top:22px;left:6%;right:6%;font-size:6px}.hero-copy{position:relative;left:auto;top:auto;transform:none;width:100%;z-index:3}.eyebrow{font-size:8px;letter-spacing:2px}.hero-tagline{font-size:12px;margin-top:25px;margin-bottom:16px}.title-small{font-size:7.8vw}.title-main{font-size:19vw;letter-spacing:-.07em}.english-title{font-size:7px;letter-spacing:.21em;margin:15px 0 22px}.hero-question{font-size:12px;letter-spacing:.09em;margin-bottom:24px}.primary-button{min-height:52px;width:100%;max-width:325px;font-size:11px}.hero-date{margin-top:22px;gap:5px}.hero-date strong{font-size:12px}.hero-date>.mono{font-size:7px}.hero-date>span:last-child{font-size:9px}.evidence-board{position:relative;right:auto;top:auto;bottom:auto;width:100%;max-width:450px;margin:32px auto 22px}.board-caption,.board-bottom{font-size:6px}.evidence-grid{gap:14px 22px;padding:0 10px;transform:rotate(-3deg)}.portrait{aspect-ratio:1.72}.window-bar{height:17px}.profile-foot{padding:5px;font-size:5px}.profile-foot em{font-size:4px}.error-window{top:38%;width:61%;left:20%}.error-number{font-size:65px}.error-body>span:nth-child(2){font-size:8px}.error-body p{font-size:5px}.error-bar{font-size:6px;padding:5px 7px}.error-body{padding:6px 9px 10px}.hero-bottom{left:6%;right:6%;bottom:23px;font-size:6px}.hero-bottom a{gap:10px}.hero-bottom a span{font-size:15px}.ticker{font-size:8px;padding:12px 0;letter-spacing:2px}.ticker span{margin:0 22px}.section{padding:48px 6% 54px;scroll-margin-top:0}.section-label{padding-bottom:18px}.section-label .mono{font-size:7px}.section-label .muted{font-size:6px;letter-spacing:.4px}.story-layout{grid-template-columns:1fr;gap:25px;padding:30px 0 35px}.story-heading h2{font-size:37px;margin:18px 0 5px;line-height:1.6}.case-stamp{font-size:18px;position:absolute;right:2px;bottom:8px;opacity:.7;margin:0;padding:6px 10px;letter-spacing:2px}.case-stamp small{font-size:6px;letter-spacing:1px}.story-heading{position:relative}.story-copy{padding:8px 0 0;border:0}.story-copy p{font-size:12px;line-height:2.5;margin-bottom:21px}.story-copy p.story-lead{font-size:20px}.terminal-content{padding:15px 12px;font-size:7px;letter-spacing:.2px;min-height:75px}.terminal-top{font-size:7px;padding:9px 12px}.section-heading{display:block;margin:29px 0 25px}.section-heading h2{font-size:23px}.section-heading p{margin-top:14px;font-size:10px}.file-list>button{gap:12px;padding:14px 7px 14px 0}.file-num{font-size:8px;width:16px}.file-photo{width:52px;height:44px}.file-name{font-size:16px;letter-spacing:.05em}.file-name>span{font-size:6px;letter-spacing:1px;margin-top:5px}.file-state{display:none}.file-plus{margin-left:auto;font-size:22px}.file-note{font-size:8px}.information-layout{grid-template-columns:1fr;gap:15px;margin-top:31px}.information-layout h2{font-size:28px;margin-top:17px}.information-caption{font-size:11px}.event-details dt{font-size:10px}.event-details dd{font-size:16px}.event-details dl>div{padding:16px 0}.ticket-button{max-width:none}.footer-title{font-size:15px}footer{padding:29px 6%;grid-template-columns:1fr;gap:18px}.footer-controls{justify-content:space-between}footer>p{font-size:8px}.dialog-content{padding:24px;grid-template-columns:1fr;gap:18px}.dialog-photo{width:140px;aspect-ratio:1.35}.dialog-content h2{margin:15px 0}.dialog-content blockquote{font-size:14px}.dialog-content .eyebrow{margin-top:0}.ticket-content{padding:25px}.ticket-content h2{font-size:23px}}
+@media(prefers-reduced-motion:reduce){body:not(.motion-on) *,body:not(.motion-on) *:before,body:not(.motion-on) *:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+/* Tickets and participation guide */
+.hero-ticket-link{display:inline-flex;align-items:center;gap:18px;font-size:10px;color:#a6b09e;letter-spacing:.08em;margin-top:16px;pointer-events:auto;border-bottom:1px solid #53604b;padding-bottom:6px}.hero-ticket-link:hover{color:var(--fg);border-color:var(--red)}.hero-ticket-link span{color:var(--red)}.event-details dl>div{gap:18px}.event-details dt{flex-shrink:0}.event-details dd{max-width:76%;overflow-wrap:anywhere}.event-details dd>span{line-height:1.8}.tickets-section{border-top:1px solid var(--line);background:radial-gradient(ellipse at 90% 40%,#26352233,transparent 60%)}.tickets-section .section-heading,.guide-section .section-heading{align-items:center}.tickets-section .section-heading .eyebrow,.guide-section .section-heading .eyebrow{margin:0 0 16px}.sale-status{font-size:9px;letter-spacing:1px;border:1px solid #4d573f;color:#b5ba9c;padding:10px 14px;white-space:nowrap}.ticket-facts{display:grid;grid-template-columns:repeat(3,1fr) 1.9fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;margin:30px 0 34px;align-items:center}.ticket-facts>span{padding-left:26px;border-right:1px solid var(--line)}.ticket-facts>span:first-child{padding-left:0}.ticket-facts small{display:block;font-size:9px;color:#8c9a80;margin-bottom:10px;letter-spacing:.1em}.ticket-facts strong{font-family:var(--mono);font-size:31px;font-weight:400;line-height:1}.ticket-facts em{font-family:Arial,sans-serif;font-size:10px;font-style:normal;margin-left:7px;color:#b6bea9}.ticket-facts>p{font-size:10px;line-height:2.2;letter-spacing:.04em;color:#a0ad95;margin:0;padding-left:26px}.ticket-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.ticket-card{position:relative;border:1px solid #35412f;background:#0c130d;padding:20px;display:flex;flex-direction:column;min-width:0}.ticket-featured{border-top:2px solid #bc4b3c;background:linear-gradient(145deg,#31211c44,#0c130d 70%)}.ticket-card-top{display:flex;justify-content:space-between;align-items:center;color:#85967b;font-size:7px;letter-spacing:.6px;gap:6px}.ticket-card-top>span:last-child{border:1px solid #394531;padding:4px 7px;font-family:Arial,sans-serif;font-size:8px;white-space:nowrap}.ticket-featured .ticket-card-top>span:first-child{color:#d08772}.ticket-card h3{font-family:var(--serif);font-weight:500;font-size:19px;letter-spacing:.08em;margin:25px 0 0}.ticket-card .ticket-price{font-family:var(--mono);font-size:clamp(28px,3.1vw,46px);font-weight:400;letter-spacing:-1.8px;line-height:1.4;margin:20px 0}.ticket-price>span{font-size:18px;color:#9d816b;margin-right:5px;letter-spacing:0}.ticket-price>small{display:block;font-family:Arial,sans-serif;font-size:9px;letter-spacing:.08em;color:#86987b;margin-top:3px}.ticket-description{font-size:11px;line-height:2.1;color:#9daa91;margin:0 0 27px;flex:1}.ticket-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:9px;border-top:1px dashed #37442e;padding-top:16px;font-size:9px;color:#7d8c71}.ticket-card-bottom strong{font-size:10px;color:#c2c6b2;font-weight:400}.ticket-footnotes{margin:21px 0 32px}.ticket-footnotes p{font-size:10px;line-height:2.1;color:#849579;margin:6px 0}.ticket-next{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:24px 0 0;border-top:1px solid var(--line)}.ticket-next>div{flex:1;min-width:230px}.ticket-next .mono{font-size:8px}.ticket-next p{font-size:10px;color:#99a58b;line-height:1.9;margin:9px 0 0}.ticket-next>a{font-size:11px;border-bottom:1px solid #5c684e;padding:8px 0;white-space:nowrap}.ticket-next>a span{margin-left:20px;color:#c05d46}.ticket-next .primary-button{width:250px;flex-shrink:0;font-size:11px;min-height:52px}.guide-section{border-top:1px solid #303a29;background:#0b100b}.guide-caption{font-size:10px;color:#8c9d80;line-height:1.8}.guide-draft{border-left:2px solid #a05c40;padding:12px 16px;font-size:10px;line-height:2.1;color:#aca78d;background:#382b181f;margin:0 0 29px}.guide-list{border-top:1px solid #46523b}.guide-list details{border-bottom:1px solid var(--line)}.guide-list summary{display:flex;align-items:center;list-style:none;gap:24px;padding:25px 8px;cursor:pointer;font-family:var(--serif);font-size:16px;letter-spacing:.05em}.guide-list summary::-webkit-details-marker{display:none}.guide-list summary:focus-visible{outline:2px solid #c4634d;outline-offset:3px}.guide-list summary:hover{color:#e8b7a5}.guide-index{font-family:var(--mono);font-size:9px;color:#947c5c}.guide-toggle{position:relative;margin-left:auto;width:13px;height:13px;flex-shrink:0}.guide-toggle:before,.guide-toggle:after{content:'';position:absolute;background:#af6c4b;width:12px;height:1px;left:0;top:6px}.guide-toggle:after{transform:rotate(90deg);transition:transform .2s}.guide-list details[open] .guide-toggle:after{transform:rotate(0deg)}.guide-body{padding:0 40px 21px 47px;max-width:950px}.guide-body p{font-size:12px;line-height:2.2;color:#9aaa8e;margin:0}.guide-contact{position:relative;border:1px solid #34412c;padding:26px;margin-top:37px}.guide-contact>.mono{font-size:8px;letter-spacing:1px;color:#a27852}.guide-contact h3{font-family:var(--serif);font-weight:500;font-size:20px;margin:17px 0 12px}.guide-contact p{font-size:11px;color:#91a180;line-height:1.9;margin:0}.guide-top-link{display:inline-block;font-size:10px;margin-top:20px;color:#baac90;border-bottom:1px solid #535c44;padding-bottom:6px}
+@media(max-width:1000px) and (min-width:701px){.ticket-card{padding:16px}.ticket-card h3{font-size:16px}.ticket-card-top{font-size:6px}.ticket-card-top>span:last-child{padding:4px;font-size:7px}.ticket-facts{grid-template-columns:repeat(3,1fr)}.ticket-facts>p{grid-column:1/-1;padding:20px 0 0}.ticket-facts>span:nth-child(3){border:0}}
+@media(max-width:700px){.hero-copy{padding-top:0}.hero-ticket-link{font-size:10px;margin-top:15px}.hero-date{margin-top:22px}.tickets-section .section-heading{display:flex;gap:12px}.tickets-section .section-heading .eyebrow{font-size:7px;letter-spacing:1.4px}.tickets-section .section-heading h2,.guide-section .section-heading h2{font-size:25px}.sale-status{font-size:8px;padding:8px}.ticket-facts{grid-template-columns:repeat(3,1fr);margin:23px 0;padding:20px 0}.ticket-facts>span{padding-left:17px}.ticket-facts>span:nth-child(3){border-right:0}.ticket-facts small{font-size:8px;letter-spacing:0}.ticket-facts strong{font-size:27px}.ticket-facts em{font-size:9px;margin-left:4px}.ticket-facts>p{grid-column:1/-1;padding:19px 0 0;font-size:10px}.ticket-grid{grid-template-columns:1fr;gap:16px}.ticket-card{padding:22px}.ticket-card-top{font-size:8px}.ticket-card-top>span:last-child{font-size:9px}.ticket-card h3{font-size:21px;margin-top:23px}.ticket-card .ticket-price{font-size:47px;margin:13px 0 18px}.ticket-price>span{font-size:21px}.ticket-price>small{font-size:10px}.ticket-description{font-size:12px;margin-bottom:22px}.ticket-card-bottom{font-size:10px}.ticket-card-bottom strong{font-size:11px}.ticket-footnotes p{font-size:10px}.ticket-next{display:grid;grid-template-columns:1fr}.ticket-next>div{min-width:0}.ticket-next>a{justify-self:start}.ticket-next .primary-button{width:100%;max-width:none}.guide-section .section-heading{margin-bottom:22px}.guide-caption{display:block;margin-top:14px;font-size:10px}.guide-draft{font-size:10px;padding:12px 13px;line-height:2}.guide-list summary{font-size:15px;padding:22px 0;gap:15px;letter-spacing:0;line-height:1.7}.guide-index{font-size:8px}.guide-body{padding:0 8px 21px 27px}.guide-body p{font-size:11px;line-height:2.2}.guide-contact{padding:23px 20px}.guide-contact h3{font-size:18px;line-height:1.8}.guide-contact p{font-size:10px}}
+.meeting-point{display:flex;justify-content:space-between;align-items:center;gap:28px;border:1px solid #425037;background:linear-gradient(120deg,#1e2b1a55,transparent);padding:25px 28px;margin:0 0 28px}.meeting-point .mono{font-size:8px;letter-spacing:1.4px}.meeting-point h3{font-family:var(--serif);font-weight:500;font-size:23px;line-height:1.8;letter-spacing:.05em;margin:14px 0 10px}.meeting-point h3>span{color:#cd9c7c}.meeting-point p{font-size:10px;line-height:2;color:#95a285;margin:0}.meeting-point>a{display:flex;align-items:center;justify-content:space-between;gap:30px;border:1px solid #526344;padding:17px 20px;font-size:11px;letter-spacing:.03em;flex-shrink:0}.meeting-point>a:hover{background:#27351d;border-color:#b67d53}.meeting-point>a>span{color:#c58c66;font-size:19px}.event-details dd>span>a{color:#bdaf8e;border-bottom:1px solid #5d634a;padding-bottom:3px}@media(max-width:700px){.meeting-point{display:block;padding:22px;margin-bottom:23px}.meeting-point h3{font-size:22px;line-height:1.8}.meeting-point p{font-size:10px}.meeting-point>a{margin-top:20px;font-size:11px;padding:13px 16px}}
+/* Reference redesign: archive desktop / stacked mobile */
+:root{--bg:#030405;--fg:#eae6e0;--muted:#8a8e91;--red:#c90025;--line:#35363b}body{background:#030405;font-family:Arial,'Hiragino Kaku Gothic ProN',sans-serif}.data-wall{position:fixed;inset:0;background:url('legacy-f8f91a6400eb.img') top center/1280px 800px;opacity:.68;pointer-events:none;z-index:-1}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.header{height:62px;padding:0 2.5%;gap:22px;border-bottom:1px solid #74747a75;background:#020304d9}.brand{display:flex;flex-direction:column;gap:4px;align-items:flex-start;flex-shrink:0}.brand-jp{font-family:var(--serif);font-size:17px;letter-spacing:.08em;white-space:nowrap}.brand-en{font-family:Georgia,serif;color:#97001c;font-size:6px;letter-spacing:2.8px}.header .desktop-nav{display:flex;gap:0;flex:1;justify-content:center}.desktop-nav a{text-align:center;border-left:1px solid #38383d;min-width:68px;padding:6px 14px;font-family:var(--serif);position:relative}.desktop-nav a:last-child{border-right:1px solid #38383d}.desktop-nav span{display:block;font-size:8px;letter-spacing:1.5px}.desktop-nav small{display:block;font-family:Georgia,serif;font-size:6px;letter-spacing:2px;margin:4px 0 0;color:#bab9bb}.desktop-nav a:hover:after{content:'';height:2px;background:#da0028;position:absolute;bottom:-9px;left:10px;right:10px;box-shadow:0 0 14px #d80027}.header-database{font-size:6px;letter-spacing:1px;line-height:1.6;border-left:1px solid #a40020;padding-left:9px;color:#63656c}.header-ticket{border:1px solid #a30020;color:#e6d8d4;padding:8px 13px;display:flex;align-items:center;gap:18px;font-family:var(--serif);font-size:10px;letter-spacing:2px;white-space:nowrap;background:linear-gradient(100deg,#50001355,#090309)}.header-ticket>span{color:#db1231;font-size:18px}.header-ticket b{color:#be1231;font-size:23px;font-weight:400}.header-ticket:hover{border-color:#f3073b;background:#51001355}#menu-toggle{display:none}.mobile-menu[hidden]{display:none}.mobile-menu{display:none}.hero{min-height:440px;height:34.5vw;max-height:580px;overflow:hidden;background:radial-gradient(ellipse at center,#02030444 0,#0000 60%);border-bottom:1px solid #595a62;isolation:isolate}.hero-grid{opacity:.5;background-size:39px 39px;background-image:linear-gradient(#55728217 1px,transparent 1px),linear-gradient(90deg,#55728217 1px,transparent 1px)}.hero .evidence-board{position:absolute;inset:0;width:100%;height:100%;max-width:none;margin:0;perspective:none}.hero .evidence-grid{display:contents;transform:none;padding:0}.hero .profile{position:absolute;width:15%;padding:0;transform:none;filter:brightness(.86) saturate(.45);border:1px solid #777b7d;box-shadow:0 4px 18px #000b;animation:archive-drift 12s ease-in-out infinite;background:#040609}.hero .profile:hover{filter:brightness(1.15) saturate(.65);border-color:#c80a2f;transform:none!important}.hero .profile-1{left:19%;top:2%;animation-delay:-4s}.hero .profile-2{right:19%;top:2%;animation-delay:-8s}.hero .profile-3{left:14.5%;top:36%;animation-delay:-1s}.hero .profile-4{right:14.5%;top:36%;animation-delay:-6s}.hero .profile-5{left:23%;top:63%;animation-delay:-3s;width:14%}.hero .profile-6{right:23%;top:63%;animation-delay:-9s;width:14%}.hero .portrait{aspect-ratio:1.42}.hero .window-bar{height:17px;border-color:#4d4c51;background:#06070a;font-size:5px;gap:3px}.hero .window-bar i{width:4px;height:4px}.hero .window-bar span{font-size:5px;letter-spacing:.2px}.hero .window-bar b{font-size:9px}.hero .profile-foot{padding:3px 6px;min-height:18px;display:block;background:#05090b;font-size:6px;line-height:1.3;border:0;position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,#020407)}.hero .profile-foot em{display:block;font-size:5px;color:#d0cbca;letter-spacing:.6px;margin-top:2px}.hero .hero-copy{position:absolute;left:34%;top:0;width:32%;height:100%;transform:none;z-index:3;text-align:center;pointer-events:none}.hero-copy h1{position:absolute;top:15%;left:-2%;width:104%;line-height:1;margin:0;letter-spacing:0}.title-art{display:block;width:100%;height:auto;filter:contrast(1.24) drop-shadow(0 0 7px #54000e88);mix-blend-mode:screen;animation:title-distortion 10s infinite}.hero-prologue{position:absolute;left:-5%;right:-5%;top:3%;margin:0;font-family:var(--serif);font-size:clamp(9px,.9vw,14px);line-height:1.8;letter-spacing:.19em;color:#d2ced0}.hero .english-title{position:absolute;top:51%;left:-8%;right:-8%;font-family:Georgia,serif;margin:0;font-size:clamp(7px,.68vw,11px);letter-spacing:.31em;color:#ab001d;white-space:nowrap}.hero .hero-question{position:absolute;top:57%;left:-9%;right:-9%;font-size:clamp(10px,1.16vw,18px);font-family:var(--serif);letter-spacing:.12em;margin:0;white-space:nowrap;color:#ddd6d3}.hero .hero-date{position:absolute;top:66%;left:0;right:0;display:block;margin:0;color:#c40026}.hero .hero-date strong{font-family:Georgia,serif;font-size:clamp(19px,2vw,29px);font-weight:400;letter-spacing:.17em}.hero .hero-date>span{display:block;font-family:var(--serif);font-size:8px;letter-spacing:.28em;color:#8f6268;margin-top:3px}.primary-button{border:1px solid #d6002c;background:linear-gradient(110deg,#57000ec9,#170309c9);box-shadow:inset 0 0 0 3px #110004,0 0 15px #b800191c;font-family:var(--serif);letter-spacing:3px}.primary-button:hover{background:linear-gradient(110deg,#7c0921,#350312);box-shadow:0 0 22px #d6002526}.hero .hero-ticket{position:absolute;left:15%;top:80%;width:70%;max-width:none;height:47px;min-height:0;padding:0 17px;justify-content:space-between;gap:13px;font-size:14px}.ticket-symbol{color:#f00435;font-size:28px;transform:rotate(-12deg)}.hero-ticket>span:nth-child(2){white-space:nowrap}.hero-ticket small{display:none}.hero-ticket .arrow{color:#9d1632;margin:0;font-size:28px}.hero-scroll{position:absolute;top:94%;left:0;right:0;font-size:5px;color:#979197;letter-spacing:3px}.hero-scroll span{display:block;margin-top:5px;font-size:14px}.hero .error-window{left:auto;right:2%;top:10%;width:12%;transform:none;animation:none;z-index:2;border-color:#676970;background:#020409e8;pointer-events:none}.hero .error-bar{padding:6px;font-size:6px;color:#bc777c;border-color:#4d343e}.hero .error-body{padding:10px 8px}.hero .error-number{font-family:Arial,sans-serif;font-size:clamp(39px,4.2vw,72px);letter-spacing:-2px;color:#afb4bc;line-height:1.05}.hero .error-body>span:nth-child(2){font-family:Arial,sans-serif;font-size:clamp(8px,1.1vw,17px);letter-spacing:1px;font-weight:bold;color:#a4a4b0}.hero .error-body p{font-family:Arial,sans-serif;font-size:6px;line-height:1.4;color:#797986;margin:10px 0}.error-logs{border-top:1px solid #443940;padding-top:8px;font-size:5px;text-align:left;line-height:1.8;letter-spacing:.5px;color:#7e7480}.side-archive{position:absolute;pointer-events:none;top:2%;bottom:2%;width:13%;overflow:hidden;border-left:1px solid #3d4c5380;border-right:1px solid #3d4c5380}.left-archive{left:1.5%}.side-archive .scene-art{position:absolute;width:100%;height:100%;opacity:.5;filter:contrast(1.2)}.vertical-copy{position:absolute;right:4%;top:2%;writing-mode:vertical-rl;font-family:var(--serif);font-size:clamp(11px,1.23vw,19px);line-height:1.9;letter-spacing:.1em;margin:0;text-shadow:0 2px 5px #000;background:#0007}.vertical-copy em{font-style:normal;color:#dc002b}.archive-code{position:absolute;left:6px;top:53%;padding:7px;background:#0009;font-size:6px;line-height:1.75;color:#8b8b97;letter-spacing:.5px}.archive-bottom{position:absolute;bottom:0;left:8px;border-left:2px solid #b7002b;padding-left:10px;font-size:6px;line-height:1.7;color:#a3a0a7;background:#000b}.archive-bottom small{font-size:5px;color:#615d66}.right-archive{left:auto;right:1.5%;top:61%;bottom:2%}.right-archive .scene-art{height:75%;opacity:.8}.right-archive p{font-family:var(--serif);font-size:clamp(13px,1.6vw,24px);transform:rotate(-13deg);position:absolute;right:6%;top:29%;letter-spacing:.12em;line-height:1.6;text-shadow:0 1px 5px #000}.right-archive>.mono{position:absolute;bottom:1%;left:4%;font-size:5px;line-height:1.7;color:#8a838f}.mobile-logs{display:none}.case-menu{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;padding:10px 1.5%;border-bottom:1px solid #74757d80;background:#01030444;scroll-margin-top:10px}.case-tile{height:clamp(150px,13.2vw,220px);border:1px solid #73747a;position:relative;overflow:hidden;background:#040609;isolation:isolate;transition:border-color .25s,filter .25s}.case-tile:after{content:'';position:absolute;inset:0;background:linear-gradient(#01040555,transparent 35%,#010206e6 83%);z-index:-1;pointer-events:none}.case-tile:before{content:'';position:absolute;right:0;bottom:0;width:25%;height:1px;background:#ba0028;z-index:2}.case-tile:hover{border-color:#da123a;filter:brightness(1.18)}.case-tile>.scene-art,.case-tile>.map-art{position:absolute;inset:0;width:100%;height:100%;z-index:-2;opacity:.9;filter:grayscale(.3) contrast(1.1)}.tile-heading{position:relative;display:flex;align-items:flex-start;gap:9px;padding:10px 8px;z-index:1}.tile-heading>span{font-family:Georgia,serif;font-size:8px;color:#aa1532;border:1px solid #67303d;padding:2px}.tile-heading h2{font-family:Georgia,serif;font-size:clamp(13px,1.35vw,22px);font-weight:400;letter-spacing:1.5px;margin:0;line-height:1.1;text-shadow:0 1px 5px #000}.tile-heading small{font-family:var(--serif);display:block;font-size:8px;letter-spacing:2px;margin-top:5px}.case-tile>p{position:absolute;bottom:11px;left:10px;right:18px;font-family:var(--serif);font-size:clamp(7px,.62vw,10px);line-height:1.8;letter-spacing:.04em;margin:0;text-shadow:0 1px 4px #000}.tile-arrow{position:absolute;right:8px;bottom:8px;border:1px solid #4e4b54;width:17px;height:19px;text-align:center;font-family:Georgia,serif;font-size:19px;font-weight:400;color:#b3a4b1;line-height:15px}.character-strip{position:absolute;inset:26% 0 10%;display:flex;overflow:hidden;z-index:-2}.character-strip .file-photo{flex:1;width:0;height:100%;background-size:auto 680%;filter:grayscale(.35);opacity:1}.character-strip .p1{background-position:15.6% 6%}.character-strip .p2{background-position:86.8% 6%}.character-strip .p3{background-position:12.9% 43%}.character-strip .p4{background-position:88.5% 43%}.character-strip .p5{background-position:17.4% 78.5%}.character-strip .p6{background-position:83.4% 78.5%}.paper-ticket{position:absolute;left:10%;top:20%;width:82%;height:65%;background:repeating-linear-gradient(0deg,#ced0c400,#3138460e 1px,transparent 2px),#a9b0b4;color:#161923;border:5px double #545b67;transform:rotate(-13deg);padding:10px;text-align:center;font-family:Georgia,serif;box-shadow:0 0 15px #000;z-index:-2}.paper-ticket>span{font-size:5px;letter-spacing:3px;display:block}.paper-ticket strong{display:block;font-size:clamp(8px,.9vw,14px);line-height:1.3;margin:5px 0;letter-spacing:.04em}.paper-ticket small{font-size:5px;display:block;letter-spacing:1px}.paper-ticket i{font-style:normal;display:block;font-family:monospace;font-size:9px;letter-spacing:2px;margin-top:4px}.front-status{padding:10px 1.5% 13px;display:grid;grid-template-columns:1.3fr 1fr 1.1fr;gap:24px;align-items:center;border-bottom:1px solid #454650}.news-panel{display:flex;gap:18px}.news-panel>h2{font-family:Georgia,serif;font-size:10px;letter-spacing:1.2px;font-weight:400;border-left:1px solid #666977;border-right:1px solid #666977;padding:5px 14px;margin:0;align-self:stretch}.news-panel>h2 small{display:block;font-family:var(--serif);font-size:6px;letter-spacing:2px;margin-top:5px}.news-panel>div{flex:1;min-width:0}.news-panel a{display:flex;gap:13px;align-items:center;font-family:var(--serif);font-size:6px;line-height:2.1;white-space:nowrap}.news-panel a>span{color:#868088;font-size:6px;flex-shrink:0}.news-panel b{margin-left:auto;font-size:12px;color:#b10d2b;font-weight:400}.warning-link{border:1px solid #af0026;padding:7px 10px;display:flex;justify-content:space-between;align-items:center;gap:10px;background:#31000d33}.warning-link strong{font-family:Georgia,serif;letter-spacing:1px;background:#b50022aa;color:#170008;padding:7px;font-size:9px;white-space:nowrap}.warning-link>span{color:#c62645;font-size:7px;line-height:1.7;font-family:var(--serif);text-align:center}.warning-link>b{color:#a51232;font-weight:400;font-size:20px}.front-controls{display:flex;align-items:center;justify-content:space-around;gap:10px}.front-controls>a{font-size:7px;border-left:1px solid #53515b;padding-left:20px;letter-spacing:1px}.front-controls .utility{font-size:7px}.section{background:#050609e8;border-bottom:1px solid #262630;padding-top:65px;padding-bottom:65px}.section h2{color:#e0d9d5}.section-label .red{color:#cd2344}.story-heading h2 span{color:#bb1233}.system-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin:45px 0 24px}.system-steps article{border-top:1px solid #682337;padding-top:21px}.system-steps article>span{font-family:var(--mono);font-size:9px;color:#aa2441;letter-spacing:1px}.system-steps h3{font-family:var(--serif);font-weight:500;font-size:23px;margin:18px 0}.system-steps p{font-family:var(--serif);font-size:12px;line-height:2.2;color:#a9a3ab}.meeting-point{scroll-margin-top:25px}.section .ticket-card{background:#09070c}.section .ticket-featured{background:linear-gradient(140deg,#290812,#09070c 80%);border-top-color:#c4002b}.section .meeting-point{background:linear-gradient(110deg,#1d101c66,transparent)}.section .file-list>button:hover{background:#1a0d18}.section .terminal{background:#08070b}.section .guide-draft{background:#320a1533;border-color:#a2203a}.section .guide-toggle:before,.section .guide-toggle:after{background:#b32343}footer{background:#030407e8;border-color:#38333c}.dialog-bar{border-color:#45333e}dialog{background:#09070c;border-color:#635361}.dialog-bottom{background:#1b0b17}.dialog-bottom:hover{background:#351027}.dialog-content blockquote{border-color:#a01138}.dialog-details{color:#948c9e}
+@keyframes archive-drift{0%,100%{translate:0 0}50%{translate:0 -3px}}@keyframes title-distortion{0%,95%,98%,100%{transform:translateX(0)}96%{transform:translateX(-2px)}97%{transform:translateX(2px)}}
+@media(min-width:1700px){.hero{max-height:620px}.hero .hero-copy h1{top:11%}.hero .english-title{top:55%}.hero .hero-question{top:61%}.hero .hero-date{top:69%}}
+@media(min-width:701px) and (max-width:1100px){.header{gap:12px;padding:0 2%;height:57px}.brand-jp{font-size:14px}.brand-en{font-size:5px;letter-spacing:2px}.header-database{display:none}.desktop-nav a{min-width:50px;padding:6px 8px}.desktop-nav span{font-size:7px;letter-spacing:1px}.desktop-nav small{font-size:5px;letter-spacing:1px}.header-ticket{font-size:8px;gap:9px;padding:6px 9px}.header-ticket b{font-size:18px}.hero{height:43vw;min-height:400px}.hero .profile{width:17%}.hero .profile-1{left:15%}.hero .profile-2{right:15%}.hero .profile-3{left:10%;top:37%}.hero .profile-4{right:10%;top:37%}.hero .profile-5{left:19%;top:65%;width:16%}.hero .profile-6{right:19%;top:65%;width:16%}.hero .hero-copy{left:32%;width:36%}.hero-copy h1{top:20%!important}.hero .english-title{top:51%}.hero .hero-question{top:57%;font-size:11px}.hero .hero-prologue{font-size:9px;top:8%}.hero .hero-ticket{width:76%;left:12%;font-size:11px;height:43px;top:80%;padding:0 11px}.hero .error-window{width:12%;right:1%;top:4%}.hero .error-number{font-size:42px}.hero .error-logs{display:none}.hero .error-body p{font-size:5px}.side-archive{width:10%}.vertical-copy{font-size:11px;right:3px}.archive-code{font-size:5px;left:0;padding:4px}.archive-bottom{font-size:5px;left:3px;padding-left:5px}.right-archive{top:67%;width:12%}.front-status{gap:10px;grid-template-columns:1.3fr 1fr}.front-controls{grid-column:1/-1;justify-content:flex-end;gap:25px;padding:3px 0}.news-panel{gap:9px}.news-panel>h2{font-size:8px;padding:5px 7px}.case-menu{gap:6px}.tile-heading{gap:5px;padding:8px 5px}.tile-heading h2{font-size:12px;letter-spacing:.7px}.tile-heading small{font-size:7px}.case-tile>p{font-size:7px;left:6px;bottom:8px;right:17px}.case-tile{height:153px}.character-strip{inset:32% 0 20%}.paper-ticket{height:60%;padding:6px}.paper-ticket strong{font-size:10px}.paper-ticket>span{font-size:4px;letter-spacing:1px}}
+@media(max-width:700px){html{scroll-padding-top:12px}.header{height:79px;padding:0 5%;gap:15px;background:#02030488}.brand{gap:5px}.brand-jp{font-size:clamp(15px,4.35vw,22px);letter-spacing:.02em}.brand-en{font-size:5px;letter-spacing:2.2px}.header .desktop-nav,.header-ticket,.header-database{display:none}#menu-toggle{display:flex;flex-direction:column;align-items:center;gap:5px;background:none;border:0;padding:10px 0 6px;width:33px;flex-shrink:0;margin-left:auto}#menu-toggle>span{height:1px;width:27px;background:#c6c6c9;transition:transform .2s,opacity .2s}#menu-toggle>small{font-family:Arial,sans-serif;font-size:7px;letter-spacing:1px;color:#a2a0a9;margin-top:2px}#menu-toggle[aria-expanded=true]>span:nth-child(1){transform:translateY(6px) rotate(45deg)}#menu-toggle[aria-expanded=true]>span:nth-child(2){opacity:0}#menu-toggle[aria-expanded=true]>span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}.mobile-menu:not([hidden]){display:grid;position:absolute;left:3%;right:3%;top:73px;z-index:30;background:#05040af7;border:1px solid #633341;padding:12px 20px;box-shadow:0 15px 50px #000}.mobile-menu a{display:flex;justify-content:space-between;padding:14px 4px;border-bottom:1px solid #37303b;font-family:var(--serif);font-size:14px}.mobile-menu a:last-child{border:0}.mobile-menu small{font-family:Georgia,serif;letter-spacing:2px;color:#98415a;font-size:8px}.hero{height:122vw;min-height:0;max-height:none;padding:0;display:block;overflow:hidden}.hero .evidence-board{position:absolute;inset:0;width:100%;max-width:none;height:100%;margin:0}.hero .profile{width:31.5%;animation-duration:14s}.hero .profile-1{left:3%;top:1%}.hero .profile-2{right:3%;top:1%}.hero .profile-3{left:3%;top:64%;width:31.5%}.hero .profile-4{right:3%;top:64%;width:31.5%}.hero .profile-5,.hero .profile-6{display:none}.hero .portrait{aspect-ratio:.97}.hero .profile-3 .portrait,.hero .profile-4 .portrait{aspect-ratio:1.13}.hero .window-bar{height:14px;padding:0 4px;gap:2px}.hero .window-bar i{width:3px;height:3px}.hero .window-bar span{font-size:3.7px;letter-spacing:0;margin-left:2px}.hero .window-bar b{font-size:7px;white-space:nowrap}.hero .profile-foot{min-height:14px;font-size:5px;padding:3px 5px}.hero .profile-foot em{display:none}.hero .hero-copy{display:contents;position:static;left:auto;width:auto;height:auto;transform:none;padding:0}.hero .hero-prologue{position:absolute;z-index:3;top:8%;left:36%;width:29%;right:auto;font-size:clamp(8px,2.55vw,13px);line-height:1.7;text-align:left;letter-spacing:.06em;word-break:normal;margin:0}.hero-copy h1{position:absolute;z-index:4;top:25%;left:3%;width:94%;margin:0}.title-art{width:100%;filter:contrast(1.22) drop-shadow(0 0 4px #8d12314d)}.hero .english-title{z-index:4;top:57%;left:2%;right:2%;font-size:clamp(5px,1.65vw,9px);text-align:center;letter-spacing:.28em}.hero .hero-question{z-index:4;top:59.6%;left:1%;right:1%;font-size:clamp(10px,3.35vw,18px);letter-spacing:.12em;text-align:center}.hero .hero-date,.hero-scroll{display:none}.hero .hero-ticket{top:90%;left:25%;width:50%;height:10vw;min-height:41px;max-height:64px;padding:0 10px;gap:7px;font-size:clamp(11px,3.05vw,17px);z-index:5;letter-spacing:2px;pointer-events:auto;box-shadow:inset 0 0 0 2px #120009,0 0 15px #e5002920}.hero-ticket small{display:block;color:#ad1337;letter-spacing:3px;font-family:Georgia,serif;font-size:7px;line-height:1;margin-top:3px}.hero-ticket .ticket-symbol{font-size:25px}.hero-ticket .arrow{font-size:24px}.hero .error-window{top:66%;right:auto;left:35.5%;width:29%;min-height:0;z-index:3;border:1px solid #a2002b;background:#050309e8;box-shadow:0 0 15px #000}.hero .error-bar{font-size:6px;padding:4px 5px}.hero .error-bar>span:last-child{display:none}.hero .error-body{padding:4px 3px 8px}.hero .error-number{font-size:12vw;line-height:1.05;letter-spacing:-2px}.hero .error-body>span:nth-child(2){font-size:2.9vw;letter-spacing:0}.hero .error-body p{font-size:1.45vw;line-height:1.25;margin:5px 0 0}.error-logs{display:none}.side-archive{display:none}.mobile-logs{display:flex;position:absolute;bottom:2.4%;left:3%;right:3%;justify-content:space-between;font-size:clamp(3px,1vw,5px);line-height:1.8;letter-spacing:.15px;color:#8b7a88}.mobile-logs>span:last-child{text-align:right;padding-top:7px}.mobile-logs b{color:#b10024;font-size:9px;margin-left:4px}.case-menu{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:7px 3% 9px;border-bottom:0}.case-tile{height:35vw;min-height:126px;max-height:245px}.tile-heading{padding:8px 6px;gap:6px}.tile-heading>span{font-size:9px;padding:1px 2px}.tile-heading h2{font-family:var(--serif);font-size:0;letter-spacing:1px;display:flex;flex-direction:column;line-height:1.2}.tile-heading small{font-size:clamp(11px,3.1vw,17px);order:-1;letter-spacing:1px;margin:0 0 5px}.tile-heading h2:after{content:attr(data-en);font-family:Georgia,serif;font-size:8px;letter-spacing:2px}.case-tile>p{font-size:clamp(7px,1.9vw,11px);line-height:1.6;bottom:9px;left:8px;right:16px;letter-spacing:.015em}.case-tile .tile-arrow{width:15px;height:17px;font-size:19px;color:#a00a30;right:5px;bottom:6px;line-height:13px;border-color:#45434a}.character-strip{inset:22% 0 12%}.character-strip .file-photo{background-size:auto 670%}.tile-ticket{grid-column:1/-1;height:19vw;min-height:72px;max-height:130px}.tile-ticket .tile-heading{max-width:39%;padding-top:10px}.tile-ticket .paper-ticket{left:23%;top:9%;width:44%;height:90%;padding:5px;border-width:3px;transform:rotate(-12deg)}.paper-ticket>span{font-size:3px;letter-spacing:1px}.paper-ticket strong{font-size:10px;margin:4px 0}.paper-ticket small{font-size:4px}.paper-ticket i{font-size:5px;margin-top:2px}.tile-ticket>p{left:auto;right:20px;top:25%;bottom:auto;width:31%;font-size:8px;line-height:1.8}.tile-ticket:after{background:linear-gradient(90deg,#0008,transparent 32%,#000c)}.tile-ticket .tile-arrow{border:0;right:8px;top:38%;color:#c30030}.front-status{display:flex;flex-direction:column;gap:9px;padding:0 3% 15px}.news-panel{display:block;border:1px solid #696a70;width:100%;background:#02040988}.news-panel>h2{font-size:10px;border:0;border-bottom:1px solid #55525c;margin:0;padding:10px 10px;letter-spacing:2px}.news-panel>h2 small{display:none}.news-panel>div{padding:4px 9px 6px}.news-panel a{font-size:7px;line-height:2.3;gap:18px;border-bottom:1px solid #37333d}.news-panel a:last-child{border:0}.news-panel a>span{font-size:6px;color:#b2a8b2}.warning-link{width:100%;padding:5px 8px}.warning-link strong{font-size:8px;padding:6px}.warning-link>span{font-size:8px}.warning-link>span br{display:none}.front-controls{width:100%;justify-content:space-between;padding:4px 7px;gap:10px}.front-controls>a{font-size:7px;padding-left:15px}.front-controls .utility{font-size:7px}.section{padding:45px 6%}.system-steps{grid-template-columns:1fr;gap:20px;margin-top:28px}.system-steps article{padding-top:15px}.system-steps h3{font-size:21px;margin:12px 0}.system-steps p{font-size:12px}.system-steps article>span{font-size:8px}.section-label .mono{font-size:7px}.section-label .muted{font-size:6px}.section .section-heading h2{font-size:23px}.hero .profile:hover{transform:none!important}}
+@media(prefers-reduced-motion:reduce){body:not(.motion-on) .title-art,body:not(.motion-on) .hero .profile{animation:none!important}}
+@media(min-width:1101px) and (max-width:1699px){.hero-copy h1{top:12%}.hero .english-title{top:55%}.hero .hero-question{top:61%}.hero .hero-date{top:69%}}
+@media(min-width:701px) and (max-width:1100px){.hero-copy h1{top:16%!important}.hero .english-title{top:58%}.hero .hero-question{top:63%}.hero .hero-date{top:70%}.hero .hero-ticket{top:82%}.hero-scroll{top:95%}}
+/* Signal feedback: no canvas, no popover; a native press fallback also works. */
+.front-controls{flex-wrap:wrap}.signal-overlay{position:fixed;inset:0;z-index:2147483647;overflow:hidden;pointer-events:none!important;opacity:0;visibility:hidden;transition:opacity 180ms,visibility 180ms;width:100%;height:100%;background:transparent}.signal-overlay>span{position:absolute;pointer-events:none!important}.signal-overlay[data-active]{opacity:1;visibility:visible;transition:none}.signal-grain{inset:-15%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' seed='17' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-size:180px 180px;opacity:.32}.signal-sweep{left:0;right:0;top:35%;height:10%;border-top:2px solid #d5004499;border-bottom:1px solid #54bacc88;background:repeating-linear-gradient(0deg,#0008 0 2px,#7d0e3038 2px 3px,transparent 3px 6px);box-shadow:0 -14px 0 #60002433,0 18px 0 #0005}.signal-marker{left:var(--tap-x,50%);top:var(--tap-y,50%);width:45px;height:45px;margin:-22px;border:1px solid #fa165580;box-shadow:3px 0 #31a6c55c,-3px 0 #b9004c66}.signal-readout{right:16px;bottom:16px;padding:7px 10px;background:#200715d9;color:#f05c89;font:9px var(--mono);letter-spacing:2px;border-left:2px solid #e40044}.signal-overlay[data-active] .signal-grain{animation:signal-grain 520ms steps(5,end) both}.signal-overlay[data-active] .signal-sweep{animation:signal-sweep 520ms linear both}.signal-overlay[data-active] .signal-marker{animation:signal-marker 520ms ease-out both}.signal-hit{animation:signal-hit 480ms steps(3,end)!important}.signal-dialog{position:absolute;inset:0;height:100%;width:100%}.signal-dialog .signal-readout{bottom:58px;font-size:7px}@keyframes signal-grain{0%{transform:translate(0,0);opacity:.4}30%{transform:translate(-9px,5px);opacity:.3}65%{transform:translate(7px,-8px);opacity:.25}100%{transform:translate(-4px,4px);opacity:0}}@keyframes signal-sweep{from{transform:translateY(-400%);opacity:.9}to{transform:translateY(800%);opacity:0}}@keyframes signal-marker{from{transform:scale(.7);opacity:.8}to{transform:scale(1.6);opacity:0}}@keyframes signal-hit{0%{text-shadow:4px 0 #ed0048,-4px 0 #499fb6;translate:-2px 0}25%{text-shadow:-3px 0 #ed0048,3px 0 #499fb6;translate:2px 0}60%{text-shadow:2px 0 #a80d39,-2px 0 #499fb6;translate:-1px 0}100%{text-shadow:0 0 transparent;translate:0 0}}
+@supports selector(body:has(a:active)){body:not(.motion-off):has(:is(a,button,summary):active)>.signal-overlay{opacity:1;visibility:visible;transition:none}body:not(.motion-off):has(:is(a,button,summary):active)>.signal-overlay .signal-grain{opacity:.35}body:not(.motion-off):has(:is(a,button,summary):active)>.signal-overlay .signal-sweep{top:45%}}
+body.motion-off .signal-overlay{display:none!important}@media(prefers-reduced-motion:reduce){body:not(.motion-on) .signal-overlay{display:none!important}}@media(max-width:700px){.front-controls{gap:12px;justify-content:flex-start}.front-controls .utility{font-size:9px}.signal-readout{font-size:7px;letter-spacing:1px;bottom:12px;right:12px}}
+/* Screen displacement is driven directly by the activation handler. */
+html,body{overflow-x:clip}body.signal-shaking>:is(header,main,footer,#mobile-menu,dialog[open]){will-change:transform}.signal-overlay[data-active] .signal-grain{animation-duration:640ms}.signal-overlay[data-active] .signal-sweep{animation-duration:640ms}.signal-overlay[data-active] .signal-marker{animation-duration:640ms}
+/* Native tap feedback uses the same path as the previously working v8 control. */
+@supports selector(body:has(a:active)){
+ body:not(.motion-off)>:is(header,main,footer,#mobile-menu,dialog[open]){transition:transform 550ms cubic-bezier(.2,4,.5,-3)!important}
+ body:not(.motion-off):not(.signal-shaking):has(:is(a,button,summary):not(#motion):not([data-motion]):not(#menu-toggle):not(#site-menu *):active)>:is(header,main,footer,#mobile-menu,dialog[open]){transform:translate3d(-18px,0,0);transition:none!important}
+ body.signal-shaking>:is(header,main,footer,#mobile-menu,dialog[open]){transition:none!important}
+}
+body.motion-off>:is(header,main,footer,#mobile-menu,dialog[open]){transform:none!important;transition:none!important}
+/* Native mobile menu: the summary opens even without script execution. */
+.site-menu{display:none}.site-menu>#menu-toggle{list-style:none}.site-menu>#menu-toggle::-webkit-details-marker{display:none}.site-menu>#menu-toggle::marker{content:''}
+@media(max-width:700px){
+ .header{overflow:visible;z-index:50}
+ .header>.site-menu{display:block;position:static;margin-left:auto;flex-shrink:0}
+ .site-menu>#menu-toggle{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:48px;margin:0;padding:8px;cursor:pointer;touch-action:manipulation;user-select:none}
+ .header .site-menu .mobile-menu{gap:0!important;position:absolute;top:calc(100% - 1px);left:3%;right:3%;margin:0;padding:12px 20px;max-height:calc(100vh - 100px);max-height:calc(100svh - 100px);overflow-y:auto;overscroll-behavior:contain;z-index:100;border:1px solid #743348;background:#06040afc;box-shadow:0 20px 45px #000b}
+ .header .site-menu:not([open]) .mobile-menu{display:none!important}
+ .header .site-menu[open] .mobile-menu{display:grid!important}
+ .header .site-menu .mobile-menu a{display:flex;justify-content:space-between;align-items:center;min-height:46px;padding:11px 4px;border-bottom:1px solid #3b2a36;gap:12px;font-family:var(--serif);font-size:14px;letter-spacing:.07em}
+ .header .site-menu .mobile-menu a:last-child{border-bottom:0}
+ .header .site-menu .mobile-menu a small{font-family:Georgia,serif;font-size:8px;letter-spacing:1.5px;color:#9d3e59;white-space:nowrap}
+ .header .site-menu .mobile-menu a:hover{color:#f07094}
+ .site-menu[open]>#menu-toggle>span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+ .site-menu[open]>#menu-toggle>span:nth-child(2){opacity:0}
+ .site-menu[open]>#menu-toggle>span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+}
+
+
+/* Position feedback is independent of the signal overlay and its animation. */
+.signal-marker{display:none!important}
+#tap-point-marker{position:fixed;left:0;top:0;width:45px;height:45px;margin:0;padding:0;transform:translate(-50%,-50%);border:2px solid #fa1655;background:transparent;box-shadow:3px 0 #31a6c580,-3px 0 #b9004c80;z-index:2147483647;pointer-events:none!important;opacity:1;visibility:visible;animation:none!important;transition:none!important}
+#tap-point-marker[hidden]{display:none!important}
+</style><style>
+/* v24: retain the v14 layout and controls; only update supplied content. */
+:root{--red:#ec1641;--line:#34313d;--muted:#929098}
+.data-wall{background-image:url('window-01-system-error-404-glitch-modern.png');background-size:1280px auto;opacity:.10}
+.hero .profile{filter:brightness(.88) saturate(.85);border-color:#84626f}.hero .profile:hover{filter:brightness(1.12) saturate(1)}
+.portrait.p1,.file-photo.p1,.dialog-photo.p1{background-image:url('subject-yonekawa.png')}
+.portrait.p2,.file-photo.p2,.dialog-photo.p2{background-image:url('subject-kasuga.png')}
+.portrait.p3,.file-photo.p3,.dialog-photo.p3{background-image:url('subject-goto.png')}
+.portrait.p4,.file-photo.p4,.dialog-photo.p4{background-image:url('subject-marin.png')}
+.portrait.p5,.file-photo.p5,.dialog-photo.p5{background-image:url('subject-matsuda.png')}
+.portrait,.file-photo{background-size:117% auto!important;background-position:50% 36%!important}
+.dialog-photo{aspect-ratio:.86;background-size:116% auto!important;background-position:50% 0!important;background-color:#000;filter:none}
+.character-strip .file-photo{background-size:auto 155%!important;background-position:50% 45%!important}
+.hero .profile-6{display:block;background:#020305}.unknown-photo{aspect-ratio:1.42;display:flex;flex-direction:column;align-items:center;justify-content:center;font:12px var(--mono);gap:8px;letter-spacing:2px}.unknown-photo small{font-size:5px;color:#8c8790;letter-spacing:1px}
+.overview-content{margin:34px 0 40px;display:grid;grid-template-columns:1fr 1fr;gap:8%;border-bottom:1px solid var(--line);padding-bottom:36px}.overview-content h2{font:500 25px/1.8 var(--serif);margin:15px 0}.overview-content p{font:13px/2.5 var(--serif);color:#b8b3bd;margin:0 0 18px}.overview-content p:last-child{color:#e6dfe4}.overview-content .eyebrow{font-size:8px;color:#b53453}
+.story-heading h2.updated-quote{font-size:clamp(30px,3.3vw,52px);white-space:nowrap}
+.file-intro{font:13px/2.2 var(--serif);color:#b6adb8;margin:20px 0 30px}.file-name small{display:block;font:8px var(--mono);letter-spacing:1px;color:#94818f;margin-top:5px}
+.staff-link{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;margin:35px 0 20px;border:1px solid #775367;background:#180c1877}.staff-link strong{display:block;font:500 23px var(--serif);margin:12px 0}.staff-link p{font:12px/2.1 var(--serif);color:#aca1ad;margin:0}.staff-link .mono{font-size:8px;color:#d44469}.staff-link>b{font-size:28px;color:#c8325c;font-weight:400}
+.minor-characters{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin:35px 0 0}.minor-characters article{padding:20px 0;border-top:1px solid #47313f}.minor-characters h3{font:500 21px var(--serif);margin:0 0 15px}.minor-characters h3 small{font-size:12px;color:#9d8c99}.minor-characters p{font:12px/2.2 var(--serif);color:#b8adba}
+.immersive-copy{font:13px/2.4 var(--serif);color:#b6aeba;margin:25px 0 40px;max-width:900px}.immersive-copy h3{font-size:22px;font-weight:500;color:#e0d9e1}.immersive-copy p{margin-bottom:20px}
+.system-steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:25px}.system-steps h3{font-size:21px}.system-steps article{position:relative;isolation:isolate}.system-steps article:after{content:'';position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;opacity:.065;pointer-events:none}.system-steps article:nth-child(1):after{background-image:url('window-03-file-not-found-glitch-modern.png')}.system-steps article:nth-child(2):after{background-image:url('window-04-connection-lost-glitch-modern.png')}.system-steps article:nth-child(3):after{background-image:url('window-05-data-corrupted-glitch-modern.png')}.system-steps article:nth-child(4):after{background-image:url('window-06-unknown-error-glitch-modern.png')}
+.information-card-copy{border:1px solid #503348;padding:25px;margin:30px 0;background:#130b1499}.information-card-copy h3{font:500 22px var(--serif);margin:0 0 15px}.information-card-copy p,.experience-copy p{font:12px/2.3 var(--serif);color:#b8adbb;margin:0 0 10px}.experience-copy{padding:25px 0 0;border-top:1px solid #65233d;margin-top:35px}.experience-copy h3{font:500 22px var(--serif);margin:0 0 20px}
+.terminal{background-image:linear-gradient(#08070bf5,#08070bf5),url('window-02-access-denied-glitch-modern.png')!important;background-size:cover}
+.kv-open{border:0;background:none;border-bottom:1px solid #773044;color:#b68499;font-size:9px;font-family:var(--serif);padding:0 0 5px}.kv-modal-image{display:block;width:100%;height:auto}#kv-dialog{width:min(1000px,94vw)}
+.staff-link:hover{border-color:#ca2455;background:#240e23}
+@media(min-width:701px) and (max-width:1050px){.system-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.overview-content{grid-template-columns:1fr;gap:15px;margin:28px 0 20px;padding-bottom:25px}.overview-content h2{font-size:23px;margin:8px 0}.overview-content p{font-size:12px;line-height:2.35}.story-heading h2.updated-quote{font-size:clamp(26px,8vw,36px);margin-bottom:45px}.system-steps{grid-template-columns:1fr;gap:20px}.system-steps h3{font-size:21px}.immersive-copy{font-size:12px;line-height:2.3;margin-bottom:30px}.immersive-copy h3{font-size:21px;line-height:1.8}.minor-characters{grid-template-columns:1fr;gap:10px}.staff-link{padding:20px;gap:16px;margin-top:28px}.staff-link strong{font-size:21px}.staff-link p{font-size:11px}.information-card-copy{padding:20px}.experience-copy p{font-size:11px}.dialog-photo{width:170px;aspect-ratio:.86}.hero .profile-6{display:none}.kv-open{font-size:8px}}
+
+/* Character section: text-only mystery man and selectable investigator records. */
+.mystery-man-copy{margin:28px 0 42px;padding:24px 0 26px;border-bottom:1px solid var(--line)}
+.mystery-man-copy h3,.officer-list-intro h3{font:500 24px/1.7 var(--serif);margin:0 0 15px}
+.mystery-man-copy p,.officer-list-intro>p:last-child{font:13px/2.4 var(--serif);color:#b8adba;margin:0}
+.officer-list-intro{margin:0 0 24px}.officer-list-intro .eyebrow{font-size:8px;color:#bb4964;margin-bottom:16px}
+.officer-list>.officer-file{display:flex;align-items:center;width:100%;padding:16px 21px 16px 10px;gap:24px;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);transition:background .25s,padding .25s}
+.officer-list>.officer-file:hover{background:#1a0d18;padding-left:18px}
+.officer-thumbnail{display:block;width:76px;height:86px;object-fit:cover;object-position:center 22%;flex-shrink:0;border:1px solid #4c3b47;filter:saturate(.7)}
+.officer-file .file-name{flex:1;min-width:0}.officer-file .file-name small{font-size:10px;line-height:1.7;letter-spacing:.03em;color:#a097a1;margin-top:9px}
+.officer-file .file-state{margin-left:0;white-space:nowrap;font-size:9px;color:#9a8b97}
+.officer-schedule-link{display:flex;justify-content:space-between;align-items:center;max-width:390px;margin:26px 0 0;padding:15px 18px;border:1px solid #634150;font:12px/1.8 var(--serif);color:#c7b7c2}
+.officer-schedule-link:hover{background:#1a0d18;border-color:#bd3c5f}
+@media(max-width:700px){.mystery-man-copy{margin:18px 0 30px;padding:20px 0}.mystery-man-copy h3,.officer-list-intro h3{font-size:22px}.mystery-man-copy p,.officer-list-intro>p:last-child{font-size:12px}.officer-list>.officer-file{gap:12px;padding:15px 7px 15px 0}.officer-list>.officer-file:hover{padding-left:6px}.officer-thumbnail{width:62px;height:76px}.officer-file .file-name small{font-size:9px;margin-top:7px}.officer-file .file-plus{margin-left:auto}.officer-schedule-link{font-size:11px}}
+
+/* Keep every supplied rule readable, with the requested emphasis. */
+.guide-body p{margin:0 0 18px;line-height:2.15}.guide-body p:last-child{margin-bottom:0}.guide-body strong{font-weight:700;color:#f1e9e8;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#a9475a}
+
+/* Supplied logo already contains the English subtitle. */
+.hero .english-title{display:none}
+.hero .supplied-title{filter:none;mix-blend-mode:normal}
+@media(max-width:700px){
+.hero{height:164vw;min-height:0;max-height:none}
+.hero .profile{display:block;width:29%}
+.hero .profile-1{left:3%;right:auto;top:2%}
+.hero .profile-2{left:35.5%;right:auto;top:2%}
+.hero .profile-3{left:68%;right:auto;top:2%;width:29%}
+.hero .profile-4{left:3%;right:auto;top:65%;width:29%}
+.hero .profile-5{display:block;left:35.5%;right:auto;top:65%;width:29%}
+.hero .profile-6{display:block;left:68%;right:auto;top:65%;width:29%}
+.hero .profile .portrait,.hero .unknown-photo{aspect-ratio:1.05}
+.hero .unknown-photo{font-size:9px;letter-spacing:1px;gap:7px}
+.hero .unknown-photo small{font-size:4px;letter-spacing:.5px}
+.hero .hero-prologue{top:25%;left:5%;right:5%;width:90%;font-size:clamp(9px,2.65vw,15px);text-align:center;line-height:1.65;letter-spacing:.1em}
+.hero .hero-copy h1{top:32%!important;left:3%;width:94%}
+.hero .hero-question{top:61%;font-size:clamp(10px,3.15vw,18px)}
+.hero .hero-ticket{top:89%;left:22%;width:56%}
+.hero .error-window{display:none}
+}
+
+/* Confirmed times and ticket prices. */
+.performance-times-compact{font-size:15px!important;line-height:2!important}
+.ticket-facts .ticket-approx{font:400 18px var(--serif);display:inline;margin-right:5px;color:inherit}
+.performance-schedule{border:1px solid var(--line);padding:24px;margin:0 0 28px;background:#0a090d99}
+.performance-schedule h3{font:500 19px var(--serif);margin:0 0 20px}
+.performance-schedule ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.performance-schedule li{display:flex;flex-direction:column;gap:9px;border-left:1px solid #674050;padding-left:16px}
+.performance-schedule li>span{font:10px var(--serif);color:#aa919f}
+.performance-schedule strong{font:400 24px var(--mono);letter-spacing:0;color:#e5dbe1}
+@media(max-width:700px){.performance-times-compact{font-size:11px!important}.performance-schedule{padding:20px}.performance-schedule ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 15px}.performance-schedule strong{font-size:24px}.ticket-facts .ticket-approx{font-size:15px}}
+
+/* The supplied portraits contain their own chrome; show the complete asset. */
+.hero button.profile{border:0;padding:0;background:transparent;box-shadow:none}
+.hero button.profile:hover{border:0;background:transparent;box-shadow:none}
+.hero .profile-image{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+a[href$="#amamiya"] .officer-thumbnail{background-color:#fff}
+@media(min-width:701px){.hero button.profile-5{top:auto;bottom:3%}}
+
+/* Personnel files share the mystery-man dialog chrome and close behavior. */
+.hero button.profile-6{background:transparent}
+.dialog-photo.p6{background-image:url('subject-sixth.jpg');background-size:contain!important;background-position:center!important;aspect-ratio:1;border:0}
+[data-officer-dialog="amamiya"] .officer-thumbnail{background-color:#fff}
+.officer-dialog-photo{display:block;width:180px;max-width:100%;aspect-ratio:.85;object-fit:cover;object-position:center 20%;background:#fff;border:1px solid var(--line)}
+.officer-dialog-copy{min-width:0}
+.officer-dialog h2{margin-bottom:10px}
+.officer-dialog-english{color:#9c919d;margin:0 0 26px;font-size:9px;letter-spacing:.12em}
+.officer-dialog-details{margin:0 0 24px}
+.officer-dialog-details>div{display:block;margin-bottom:14px}
+.officer-dialog-details dt{font:10px/1.8 var(--serif);color:#9f8e9b;margin-bottom:3px}
+.officer-dialog-details dd{margin:0;text-align:left;font:12px/1.9 var(--serif);color:#d8ced6;overflow-wrap:anywhere}
+.officer-dialog-description{font:13px/2.25 var(--serif);color:#c1b5c2}
+.officer-dialog-description p{margin:0 0 15px}
+.officer-inline-schedule{border-top:1px solid var(--line);margin-top:26px;padding-top:18px;font:11px/2 var(--serif);color:#c7b7c2}
+.officer-inline-schedule summary{cursor:pointer}
+.officer-inline-schedule p{color:#9c919d;margin-bottom:0}
+.officer-schedule-link{width:100%;text-align:left;background:transparent}
+.officer-schedule-content{padding:34px;font:13px/2.2 var(--serif);color:#c1b5c2}
+.officer-schedule-content h2{color:var(--fg);font-weight:500;font-size:25px}
+@media(min-width:701px){.hero button.profile-6{top:auto;bottom:3%}}
+@media(max-width:700px){.officer-dialog-photo{width:160px}.officer-dialog-description{font-size:12px;line-height:2.25}.officer-dialog-details dd{font-size:12px}.officer-schedule-content{padding:25px}.officer-schedule-content h2{font-size:22px}}
+
+/* Supplied cast schedule, kept readable on narrow screens. */
+#officer-schedule-dialog{width:min(740px,94vw)}
+#officer-schedule-dialog .dialog-bar{position:sticky;top:0;z-index:2;background:#100c13}
+.cast-schedule-intro{margin:10px 0 24px;font:12px/2 var(--serif)}
+.cast-table-wrap{width:100%;border:1px solid #51404b}
+.cast-schedule-table{border-collapse:collapse;width:100%;table-layout:fixed;font:14px/1.6 var(--serif);color:#e2dbe1}
+.cast-schedule-table caption{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.cast-schedule-table th,.cast-schedule-table td{padding:15px 10px;border-bottom:1px solid #3b303b;text-align:center;vertical-align:middle}
+.cast-schedule-table th:first-child{width:26%}
+.cast-schedule-table thead th{font-size:12px;background:#29131f;color:#eadbe2;font-weight:500}
+.cast-schedule-table tbody th{font-size:13px;font-weight:500;white-space:nowrap}
+.cast-schedule-table tbody tr:nth-child(even){background:#ffffff03}
+.cast-schedule-table tbody tr:last-child>*{border-bottom:0}
+.cast-schedule-table small{display:block;font-size:10px;color:#a69aa8;margin-top:4px;line-height:1.5}
+.cast-schedule-table tbody th span{font-size:11px}
+.schedule-guest{display:block;color:#f07b99;font-size:10px;margin-top:4px}
+.cast-daily-times{margin-top:28px;color:#c8bdc9}
+.cast-daily-times h3{font:500 16px var(--serif);margin:0 0 16px}
+.cast-daily-times ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;list-style:none;padding:0;margin:0}
+.cast-daily-times li{padding:10px;border-left:1px solid #9b3357;font:14px var(--mono);background:#1a101a}
+.cast-daily-times li span{display:block;font:10px var(--serif);color:#a296a5;margin-bottom:6px}
+.cast-daily-times>p{font:11px/2 var(--serif);margin-top:16px}
+.cast-date-list{padding:0;margin:14px 0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.cast-date-list li{padding:5px 9px;border:1px solid #5d4052;color:#e4d5e1;background:#241220;font:12px/1.8 var(--serif)}
+.cast-officer-label{color:#d0bdcc;margin:14px 0 0}
+.cast-officer-times{color:#ac9caf;font:11px/2 var(--serif)}
+.cast-schedule-open{display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:390px;width:100%;margin:22px 0 0;padding:14px 18px;border:1px solid #673e53;color:#d9bccc;background:#25111c;font:12px/1.8 var(--serif);text-align:left}
+.cast-schedule-open:hover{border-color:#c54469;background:#341323}
+.cast-ticket-schedule{margin:-8px 0 28px}
+@media(max-width:700px){#officer-schedule-dialog .officer-schedule-content{padding:25px 16px}.cast-schedule-table th,.cast-schedule-table td{padding:12px 5px}.cast-schedule-table{font-size:12px}.cast-schedule-table tbody th{font-size:11px}.cast-schedule-table tbody th span{font-size:10px}.cast-schedule-table small{font-size:9px}.cast-daily-times li{font-size:12px;padding:9px 7px}}
+
+/* Contact details supplied for email and phone inquiries. */
+.contact-methods{margin:20px 0 4px;display:grid;gap:14px;font:13px/1.8 var(--serif)}
+.contact-methods>div{display:grid;grid-template-columns:75px minmax(0,1fr);align-items:baseline;gap:10px}
+.contact-methods dt{font-size:11px;color:#a99ba6;letter-spacing:.03em}
+.contact-methods dd{margin:0;min-width:0}
+.contact-methods a{color:#e9d5e3;overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#78415c}
+.contact-methods a:hover{color:#f38cab}
+@media(max-width:700px){.contact-methods{font-size:12px}.contact-methods>div{grid-template-columns:63px minmax(0,1fr);gap:8px}.contact-methods dt{font-size:10px}}
+
+</style>
+
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body class="motion-on">
+<a class="skip" href="#main">本文へ移動</a>
+<div class="noise" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+<div class="signal-overlay" aria-hidden="true"><span class="signal-grain"></span><span class="signal-sweep"></span><span class="signal-marker"></span><span class="signal-readout">SIGNAL LOST / RECONNECTING_</span></div>
+<div class="data-wall" aria-hidden="true"></div>
+<header class="header"><a href="#main" class="brand"><span class="brand-jp">ジョン・ドゥの最終陳述</span><span class="brand-en">JOHN DOE’S FINAL STATEMENT</span></a><nav class="desktop-nav" aria-label="メインナビゲーション"><a href="#main"><span>トップ</span><small>TOP</small></a><a href="#story"><span>ストーリー</span><small>STORY</small></a><a href="#files"><span>登場人物</span><small>CHARACTER</small></a><a href="#system"><span>システム</span><small>SYSTEM</small></a><a href="#access"><span>アクセス</span><small>ACCESS</small></a><a href="#tickets"><span>チケット</span><small>TICKET</small></a></nav><span class="header-database mono">DATABASE v3.1.1<br>CASE: JOHN DOE<br>STATUS: UNRESOLVED</span><a class="header-ticket" href="https://obaken-ticket.com/pages/calendar" target="_blank" rel="noopener noreferrer" data-ticket-purchase aria-label="チケットを購入する（公式購入カレンダーを別タブで開く）"><span>▰</span> チケット購入 <b>↗</b></a><details id="site-menu" class="site-menu"><summary id="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="メニューを開く"><span></span><span></span><span></span><small>MENU</small></summary><nav id="mobile-menu" class="mobile-menu" aria-label="スマートフォン用ナビゲーション"><a href="#main"><span>トップ</span><small>TOP</small></a><a href="#story"><span>ストーリー</span><small>STORY</small></a><a href="#files"><span>登場人物</span><small>CHARACTER</small></a><a href="#system"><span>システム</span><small>SYSTEM</small></a><a href="#information"><span>公演概要</span><small>INFORMATION</small></a><a href="#access"><span>アクセス</span><small>ACCESS</small></a><a href="#tickets"><span>チケット</span><small>TICKET</small></a><a href="#guide"><span>注意事項</span><small>GUIDE</small></a><a href="#contact"><span>お問い合わせ</span><small>CONTACT</small></a></nav></details></header>
+
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-grid" aria-hidden="true"></div>
+<aside class="side-archive left-archive" aria-hidden="true"><svg class="scene-art" viewBox="1100 311 170 95" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="legacy-d89ace91ee8d.jpg" width="1280" height="720"/></svg><div class="archive-code mono">CASE ARCHIVE<br><br>CASE_001<br>CASE_002<br>CASE_003<br>CASE_004<br>CASE_005<br><span class="red">UNKNOWN</span></div><p class="archive-bottom mono">INVESTIGATE<br>THE UNKNOWN.<br><small>SOME TRUTHS<br>SHOULD NOT BE FOUND.</small></p></aside>
+<div class="evidence-board" aria-label="身元不明の人物の捜査写真"><div class="evidence-grid"><button class="profile profile-1" data-person="0" aria-label="人物ファイル01を開く"><img class="profile-image" src="subject-yonekawa.png" alt="人物ファイル01の捜査写真" decoding="async"></button><button class="profile profile-2" data-person="1" aria-label="人物ファイル02を開く"><img class="profile-image" src="subject-kasuga.png" alt="人物ファイル02の捜査写真" decoding="async"></button><button class="profile profile-3" data-person="2" aria-label="人物ファイル03を開く"><img class="profile-image" src="subject-goto.png" alt="人物ファイル03の捜査写真" decoding="async"></button><button class="profile profile-4" data-person="3" aria-label="人物ファイル04を開く"><img class="profile-image" src="subject-marin.png" alt="人物ファイル04の捜査写真" decoding="async"></button><button class="profile profile-5" data-person="4" aria-label="人物ファイル05を開く"><img class="profile-image" src="subject-matsuda.png" alt="人物ファイル05の捜査写真" decoding="async"></button><button class="profile profile-6" data-person="5" aria-label="人物ファイル06を開く"><img class="profile-image" src="subject-sixth.jpg" alt="人物ファイル06の捜査写真" decoding="async"></button></div></div>
+<div class="hero-copy"><h1 id="hero-title"><span class="sr-only">ジョン・ドゥの最終陳述</span><svg class="title-art supplied-title" viewBox="400 320 972 440" role="img" aria-label="ジョン・ドゥの最終陳述"><image href="title-logo-supplied.png" width="1754" height="1240"/></svg></h1><p class="english-title">JOHN DOE’S FINAL STATEMENT</p><a class="primary-button hero-ticket" href="https://obaken-ticket.com/pages/calendar" target="_blank" rel="noopener noreferrer" data-ticket-purchase aria-label="チケットを購入する（公式購入カレンダーを別タブで開く）"><span class="ticket-symbol" aria-hidden="true">▰</span><span>チケット購入<small>BUY TICKET</small></span><span class="arrow">↗</span></a><a class="hero-scroll mono" href="#case-menu">SCROLL<span>│</span></a></div>
+<div class="error-window" aria-hidden="true"><div class="error-bar"><span>△ ERROR</span><span>− &nbsp; ×</span></div><div class="error-body"><span class="error-number">404</span><span>NOT FOUND</span><p>The truth you are seeking<br>cannot be found.</p><div class="error-logs mono">&gt; FILE_DELETED<br>&gt; ACCESS_DENIED<br>&gt; UNKNOWN_ERROR<br>&gt; RECORD_NOT_FOUND<br>&gt; DATA_CORRUPTED</div></div></div>
+<aside class="side-archive right-archive" aria-hidden="true"><svg class="scene-art" viewBox="1100 311 170 95" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="legacy-d89ace91ee8d.jpg" width="1280" height="720"/></svg></aside>
+<div class="mobile-logs mono" aria-hidden="true"><span>CASE_001 : NOT FOUND<br>CASE_002 : ACCESS DENIED<br>CASE_003 : DATA CORRUPTED</span><span>MULTIPLE_RECORDS : MISSING<br>TRUTH : UNKNOWN <b>■</b></span></div>
+</section>
+<nav id="case-menu" class="case-menu" aria-label="コンテンツメニュー"><a class="case-tile tile-story" href="#story"><svg class="scene-art" viewBox="1100 311 170 95" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="legacy-d89ace91ee8d.jpg" width="1280" height="720"/></svg><div class="tile-heading"><span>01</span><h2 data-en="STORY">STORY<small>ストーリー</small></h2></div><p>「僕がやりました」<br>その自白の先にあるものを確かめる。</p><b class="tile-arrow" aria-hidden="true">›</b></a><a class="case-tile tile-character" href="#files"><div class="character-strip" aria-hidden="true"><i class="file-photo p1"></i><i class="file-photo p2"></i><i class="file-photo p3"></i><i class="file-photo p4"></i><i class="file-photo p5"></i></div><div class="tile-heading"><span>02</span><h2 data-en="CHARACTER">CHARACTER<small>登場人物</small></h2></div><p>身元不明の男と、事件を追う刑事たち。<br>人物ファイルにアクセスする。</p><b class="tile-arrow" aria-hidden="true">›</b></a><a class="case-tile tile-system" href="#system"><svg class="scene-art" viewBox="548 526 208 67" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><image href="legacy-d89ace91ee8d.jpg" width="1280" height="720"/></svg><div class="tile-heading"><span>03</span><h2 data-en="SYSTEM">SYSTEM<small>体験システム</small></h2></div><p>現場検証、取り調べ、情報共有。<br>証拠をつなぎ、最後の判断へ。</p><b class="tile-arrow" aria-hidden="true">›</b></a><a class="case-tile tile-access" href="#access"><svg class="map-art" viewBox="0 0 300 180" aria-hidden="true"><defs><pattern id="streets" width="23" height="23" patternTransform="rotate(-27)" patternUnits="userSpaceOnUse"><path d="M0 0V23H23" fill="none" stroke="#506068" stroke-width=".7"/></pattern></defs><rect width="300" height="180" fill="#060b10"/><rect width="300" height="180" fill="url(#streets)"/><path d="M-20 115L315 22M90 -20L150 200" stroke="#68727a" stroke-width="5" opacity=".45"/><path d="M0 135L300 55" stroke="#531b23" stroke-width="3"/><path d="M185 63c-17 0-22 18-14 30l14 22 14-22c8-12 3-30-14-30m0 8a7 7 0 1 1 0 14 7 7 0 0 1 0-14" fill="#e70029"/></svg><div class="tile-heading"><span>04</span><h2 data-en="ACCESS">ACCESS<small>アクセス</small></h2></div><p>方南町駅 3a番出口 集合。<br>会場情報・アクセス方法はこちら。</p><b class="tile-arrow" aria-hidden="true">›</b></a><a class="case-tile tile-ticket" href="#tickets"><div class="paper-ticket" aria-hidden="true"><span>JD / ADMIT ONE</span><strong>JOHN DOE’S<br>FINAL STATEMENT</strong><small>THE TRUTH IS MISSING</small><i>||||| || ||| ||||| || ||</i></div><div class="tile-heading"><span>05</span><h2 data-en="TICKET">TICKET<small>チケット</small></h2></div><p>チケットの料金・<br>公演概要はこちら。</p><b class="tile-arrow" aria-hidden="true">›</b></a></nav><div class="front-status"><div class="news-panel"><h2>INFORMATION<small>お知らせ</small></h2><div><a href="#information"><span>公演情報</span>12月の公演日程を公開 <b>›</b></a><a href="#tickets"><span>チケット</span>料金・販売情報について <b>›</b></a><a href="#access"><span>アクセス</span>方南町駅 3a番出口 集合 <b>›</b></a></div></div><a class="warning-link" href="#guide"><strong>⚠ WARNING</strong><span>ご参加前に<br>注意事項をご確認ください。</span><b>›</b></a><div class="front-controls"><button class="kv-open" data-kv>キービジュアルを見る</button><button id="motion" class="utility" aria-pressed="true">MOTION <b>ON</b></button><button class="sound utility" id="sound" aria-pressed="false" aria-label="効果音をオンにする">SOUND <b>OFF</b></button><a href="#guide">注意事項</a><a href="#contact">お問い合わせ</a></div></div>
+<section id="story" class="section story-section"><div class="section-label reveal"><span class="mono red">01 / STORY</span><span class="mono muted">case_00404 / overview.txt</span></div><div class="overview-content reveal" id="about"><div><p class="eyebrow">IMMERSIVE MYSTERY</p><h2>ジョン・ドゥの<br>最終陳述とは</h2></div><div><p>あなた自身が刑事となり、殺人事件の捜査に参加する体験型ミステリー。</p><p>事件現場を調べ、証拠を集め、自首してきた男を取り調べる。<br>仲間と情報を共有し、供述と証拠を照らし合わせながら、事件の真相に迫ってください。</p><p>最後に、男を逮捕するか、しないか。<br>その判断を下すのは、あなたたちです。</p></div></div><div class="story-layout"><div class="story-heading reveal"><h2 class="updated-quote">「僕がやりました」</h2><div class="case-stamp mono">CLASSIFIED<br><small>CASE NO. 00404</small></div></div><div class="story-copy reveal"><p>あるマンションの一室で、暴力団幹部の男が死亡しているのが発見された。</p><p>現場にいた身元不明の男は、自ら犯行を認めている。<br>しかし、動機は不明。供述を裏付ける証拠も、まだ揃っていない。</p><p>捜査に行き詰まった捜査一課から応援を求められ、現場へ向かった特殊捜査0課のあなたたち。</p><p>男の言葉は、真実なのか。<br>現場に残された証拠を集め、その自白の先にあるものを確かめてください。</p></div></div><div class="terminal reveal"><div class="terminal-top mono"><span>● &nbsp; RECOVERY TERMINAL</span><span>read_only</span></div><div class="terminal-content mono"><span class="muted">&gt; accessing /archive/john_doe/statement.log</span><br><span class="red">WARNING:</span> <span id="terminal-text">Identity verification failed.</span><span class="terminal-cursor">▌</span></div></div></section>
+<section id="files" class="section files-section"><div class="section-label reveal"><span class="mono red">02 / PERSON FILES</span><span class="mono muted">personnel records_</span></div><div class="section-heading reveal"><h2>登場人物</h2><p>捜査員を選んで、人物ファイルを開く。</p></div><article class="mystery-man-copy reveal"><h3>謎の男</h3><p>殺人を自供する身元不明の男。<br>その素性も動機も明らかになっていない。</p><button type="button" class="cast-schedule-open" data-officer-schedule aria-haspopup="dialog" aria-controls="officer-schedule-dialog">聴取予定／出演日程を見る <span aria-hidden="true">+</span></button></article><div class="officer-list-intro reveal"><p class="eyebrow">PERSONNEL FILES / 捜査第一課</p><h3>捜査一課の刑事</h3><p>現場指揮を執る刑事。<br>特殊捜査0課のあなたたちとともに、事件の捜査を進める。</p></div><nav class="file-list officer-list reveal" aria-label="捜査員を選ぶ"><button type="button" class="officer-file" data-officer-dialog="miyoshi" aria-haspopup="dialog" aria-controls="officer-dialog-miyoshi" aria-label="三芳 悠の捜査員紹介を見る"><span class="file-num">01</span><img class="officer-thumbnail" src="officer-2.jpg" alt="三芳 悠の制服写真"><span class="file-name">三芳 悠<span>MIYOSHI HARUKA</span><small>担当キャスト：かすが</small></span><span class="file-state">巡査部長 ／ 30歳</span><span class="file-plus" aria-hidden="true">+</span></button><button type="button" class="officer-file" data-officer-dialog="todo" aria-haspopup="dialog" aria-controls="officer-dialog-todo" aria-label="東堂 馨の捜査員紹介を見る"><span class="file-num">02</span><img class="officer-thumbnail" src="officer-3.jpg" alt="東堂 馨の制服写真"><span class="file-name">東堂 馨<span>TODO KAORU</span><small>担当キャスト：アガスケ</small></span><span class="file-state">警部補 ／ 35歳</span><span class="file-plus" aria-hidden="true">+</span></button><button type="button" class="officer-file" data-officer-dialog="amamiya" aria-haspopup="dialog" aria-controls="officer-dialog-amamiya" aria-label="雨宮 律の捜査員紹介を見る"><span class="file-num">03</span><img class="officer-thumbnail" src="officer-1.png" alt="雨宮 律の制服写真"><span class="file-name">雨宮 律<span>AMAMIYA RITSU</span><small>担当キャスト：塁</small></span><span class="file-state">巡査部長 ／ 32歳</span><span class="file-plus" aria-hidden="true">+</span></button><button type="button" class="officer-file" data-officer-dialog="fujita" aria-haspopup="dialog" aria-controls="officer-dialog-fujita" aria-label="藤田 伊織の捜査員紹介を見る"><span class="file-num">04</span><img class="officer-thumbnail" src="officer-5.jpg" alt="藤田 伊織の制服写真"><span class="file-name">藤田 伊織<span>FUJITA IORI</span><small>担当キャスト：魔都</small></span><span class="file-state">巡査部長 ／ 32歳</span><span class="file-plus" aria-hidden="true">+</span></button><button type="button" class="officer-file" data-officer-dialog="iura" aria-haspopup="dialog" aria-controls="officer-dialog-iura" aria-label="井浦 周の捜査員紹介を見る"><span class="file-num">05</span><img class="officer-thumbnail" src="officer-4.jpg" alt="井浦 周の制服写真"><span class="file-name">井浦 周<span>IURA AMANE</span><small>担当キャスト：MARIN</small></span><span class="file-state">警部 ／ 27歳</span><span class="file-plus" aria-hidden="true">+</span></button></nav><button type="button" class="officer-schedule-link reveal" data-officer-schedule aria-haspopup="dialog" aria-controls="officer-schedule-dialog">臨場予定／出演日程を見る <span aria-hidden="true">+</span></button><div class="minor-characters reveal"><article><h3>麻生 <small>（あそう）</small></h3><p>機動捜査隊員。<br>あなたたちを現場へ案内し、捜査に関する情報を伝える。</p></article><article><h3>鬼島 司 <small>（きじま つかさ）</small></h3><p>事件の被害者。50歳。<br>指定暴力団・坂口組系「鬼島組」の幹部。</p></article></div></section>
+<section id="system" class="section system-section"><div class="section-label reveal"><span class="mono red">03 / SYSTEM</span><span class="mono muted">investigate with your own words_</span></div><div class="section-heading reveal"><h2>体験システム</h2><p>現場検証から、最後の逮捕判断まで。</p></div><div class="immersive-copy reveal"><h3>本公演におけるイマーシブ（没入体験）とは</h3><p>お客様は、特殊捜査0課の刑事として物語に参加します。</p><p>登場人物に自分の言葉で質問し、見つけた証拠を提示することで、新たな供述や情報を得られることがあります。</p><p>何を調べ、誰に問いかけ、集まった情報から何を導き出すのか。<br>あなたたちの捜査と判断が、物語の結末を左右します。</p></div><h3 class="eyebrow reveal">遊び方 / INVESTIGATION FLOW</h3><div class="system-steps reveal"><article><span>01 / EXAMINE</span><h3>現場検証</h3><p>事件現場に残された物や痕跡を調べ、手がかりを集めましょう。物を動かす際は、担当刑事に確認してください。</p></article><article><span>02 / QUESTION</span><h3>取り調べ</h3><p>自首してきた男に質問し、事件の経緯や動機を探ります。現場で見つけた情報を提示し、供述との整合性を確かめてください。</p></article><article><span>03 / CONNECT</span><h3>情報共有・推理</h3><p>班ごとに集めた証拠や聞き出した供述を共有します。情報同士を結びつけ、この現場で何が起きたのかを考えましょう。</p></article><article><span>04 / DECIDE</span><h3>逮捕判断</h3><p>捜査で得た証拠と推理をもとに、男を逮捕するか、しないかを判断します。判断の根拠も、あなたたちの言葉で示してください。</p></article></div><div class="information-card-copy reveal"><h3>情報カード</h3><p>現場検証や取り調べで得られる重要な情報をまとめたカードです。<br>捜査中のメモとして扱い、仲間との情報共有に活用してください。</p></div><div class="experience-copy reveal"><h3>物語体験について</h3><p>本公演は、お客様の捜査と判断によって結末が分岐します。</p><p>終演後、その場で事件の真相や各結末への到達条件を解説することはありません。<br>集めた証拠や登場人物の言葉を手がかりに、物語を考察する体験をお楽しみください。</p></div></section>
+<section id="information" class="section information-section">
+<div class="section-label reveal"><span class="mono red">04 / INFORMATION</span><span class="mono muted">awaiting further instructions_</span></div>
+<div class="information-layout"><div class="reveal"><p class="eyebrow">あなたも、この事件の目撃者になる。</p><h2>真実へのアクセスは、<br>まもなく。</h2><p class="information-caption">ミステリーイベント<br>「ジョン・ドゥの最終陳述」</p></div><div class="event-details reveal"><dl><div><dt>公演日程</dt><dd>12/11（金）〜12/29（火）<span>15日間・全90公演 ／ 1日6公演</span></dd></div><div><dt>公演時間</dt><dd class="performance-times-compact">①11:00 ／ ②12:40 ／ ③14:20<br>④16:00 ／ ⑤17:40 ／ ⑥19:20</dd></div><div><dt>集合場所</dt><dd>東京メトロ 丸ノ内線<br>方南町駅 3a番出口<span><a href="https://maps.app.goo.gl/snG4QUyvxEAzQvsg9" target="_blank" rel="noopener noreferrer">Google マップで確認 ↗</a></span></dd></div><div><dt>チケット</dt><dd>前売券 5,980円（税込・手数料別）<span>当日券 6,500円（税込）<br>当日リベンジ 4,000円</span></dd></div><div><dt>所要時間・定員</dt><dd>約80分・各回6名</dd></div></dl><a class="primary-button ticket-button" id="ticket" href="https://obaken-ticket.com/pages/calendar" target="_blank" rel="noopener noreferrer" data-ticket-purchase aria-label="チケットを購入する（公式購入カレンダーを別タブで開く）"><span class="button-icon">↳</span> チケットを購入する <span class="arrow">↗</span></a></div></div>
+</section>
+<section id="tickets" class="section tickets-section" aria-labelledby="tickets-title">
+<div class="section-label reveal"><span class="mono red">05 / TICKETS</span><span class="mono muted">your access to the truth_</span></div>
+<div class="section-heading reveal"><div><p class="eyebrow">事件への入口は、ここから。</p><h2 id="tickets-title">チケット概要</h2></div><span class="sale-status mono">公式チケット</span></div>
+<div class="ticket-facts reveal"><span><small>所要時間</small><strong><span class="ticket-approx">約</span>80<em>分</em></strong></span><span><small>各回定員</small><strong>6<em>名</em></strong></span><span><small>公演数</small><strong>90<em>公演</em></strong></span><p>12/11（金）〜12/29（火）の15日間・1日6公演。</p></div>
+<div class="performance-schedule reveal" aria-label="公演時間"><h3>公演時間</h3><ol><li><span>第1回</span><strong>11:00</strong></li><li><span>第2回</span><strong>12:40</strong></li><li><span>第3回</span><strong>14:20</strong></li><li><span>第4回</span><strong>16:00</strong></li><li><span>第5回</span><strong>17:40</strong></li><li><span>第6回</span><strong>19:20</strong></li></ol></div><div class="cast-ticket-schedule reveal"><button type="button" class="cast-schedule-open" data-officer-schedule aria-haspopup="dialog" aria-controls="officer-schedule-dialog">聴取予定／出演日程を見る <span aria-hidden="true">+</span></button></div><div id="access" class="meeting-point reveal" aria-labelledby="meeting-title"><div><span class="mono red">MEETING POINT / 集合場所</span><h3 id="meeting-title">東京メトロ 丸ノ内線<br>方南町駅 <span>3a番出口</span></h3><p>受付時にチケットをご提示ください。<br>チケットに記載された公演時間の５分前にお集まりください。</p></div><a href="https://maps.app.goo.gl/snG4QUyvxEAzQvsg9" target="_blank" rel="noopener noreferrer" aria-label="方南町駅3a番出口のGoogleマップを開く（別タブ）">Google マップで確認 <span>↗</span></a></div>
+<div class="ticket-grid reveal">
+<article class="ticket-card ticket-featured"><div class="ticket-card-top mono"><span>01 / ADVANCE</span><span>前売券</span></div><h3>前売チケット</h3><p class="ticket-price"><span>¥</span>5,980<small>税込・手数料別</small></p><p class="ticket-description">事前に参加日時を指定してご購入いただくチケットです。</p></article>
+<article class="ticket-card"><div class="ticket-card-top mono"><span>02 / ON THE DAY</span><span>当日券</span></div><h3>当日チケット</h3><p class="ticket-price"><span>¥</span>6,500<small>税込</small></p><p class="ticket-description">当日参加をご希望の方へ。販売数はヨニゲノイエ公式Xにてその日の初回1時間前にポストいたします。</p></article>
+<article class="ticket-card"><div class="ticket-card-top mono"><span>03 / SAME-DAY REVENGE</span><span>当日リベンジ</span></div><h3>当日リベンジ</h3><p class="ticket-price"><span>¥</span>4,000</p><p class="ticket-description">もう一度、事件に向き合いたい方へ。当日リベンジの対象者・利用条件・販売方法は後日発表します。</p></article>
+</div>
+<div class="ticket-footnotes reveal"><p>前売券は税込・手数料別、当日券は税込です。参加対象年齢は販売開始時にご案内します。集合時間や参加条件は、下記の注意事項をご確認ください。</p></div>
+<div class="ticket-next reveal"><div><span class="mono red">BEFORE YOU BOOK</span><p>ご予約の前に、ご参加にあたっての案内をご確認ください。</p></div><a href="#guide">注意事項を読む <span>↓</span></a><a class="primary-button" href="https://obaken-ticket.com/pages/calendar" target="_blank" rel="noopener noreferrer" data-ticket-purchase aria-label="チケットを購入する（公式購入カレンダーを別タブで開く）"><span class="button-icon">↳</span> チケットを購入する <span class="arrow">↗</span></a></div>
+</section>
+<section id="guide" class="section guide-section" aria-labelledby="guide-title"><div class="section-label reveal"><span class="mono red">06 / PARTICIPATION GUIDE</span><span class="mono muted">please read before entering_</span></div><div class="section-heading reveal"><div><p class="eyebrow">ご予約・ご参加の前に、必ずお読みください。</p><h2 id="guide-title">注意事項</h2></div><span class="guide-caption">各項目を開いてご確認ください。</span></div><div class="guide-list reveal"><details open><summary><span class="guide-index">01</span><span>チケットの変更・払い戻し・譲渡</span><span class="guide-toggle" aria-hidden="true"></span></summary><div class="guide-body"><p>※一度購入されたチケットは時間の変更及び払い戻しはできません。</p><p>※ウェブチケットは譲渡不可となります。必ずお申込み代表者様と分配チケットを受け取った方でご来場ください。</p></div></details><details open><summary><span class="guide-index">02</span><span>集合・受付・遅刻</span><span class="guide-toggle" aria-hidden="true"></span></summary><div class="guide-body"><p>※集合場所にはチケットに記載された<strong>公演時間の５分前にお集まりください。</strong></p><p>※上記時間より１０分以上集合に遅れた場合はキャンセル扱いとなり、その際の返金は致しかねますのでご注意ください。</p></div></details><details><summary><span class="guide-index">03</span><span>作品・演出・参加条件について</span><span class="guide-toggle" aria-hidden="true"></span></summary><div class="guide-body"><p>※本作品は、すべてフィクションです。</p><p>※登場人物や事件は架空のものであり、特定の人物・団体との関連はありません。</p><p>※グロテスク、センシティブな表現がございます。苦手な方はご注意下さい。</p><p>※本公演の物語には、暴力・虐待、性的搾取（未成年者への被害を含む）、薬物、子どもの被害や死に関する内容が含まれます。これらは登場人物の背景や事件に関わるものであり、一部のお客様にとって強い心理的負担となる可能性がございます。</p><p>※作品の性質上、具体的な展開をすべて事前に開示することはできません。ご参加にあたり不安のある方は、チケットご購入前にお問い合わせください。</p><p>※乳児を連れてのご参加は大変危険ですので禁止させていただきます。</p><p>※妊娠中の方や、その他の疾患をお持ちのお客様はご参加をお控えください。</p><p>※泥酔状態でのご参加はご遠慮ください。スタッフの判断で退場いただく場合があります。</p></div></details><details><summary><span class="guide-index">04</span><span>キャストへの接触・公演中のお願い</span><span class="guide-toggle" aria-hidden="true"></span></summary><div class="guide-body"><p>※ゲストからキャストへの接触はお控えください。故意の接触があった場合、その場でゲームオーバーとさせていただきます。</p><p>※キャストの指示には必ず従ってください。従わない場合は退場となります。</p><p>※キャストに対する暴力行為があった場合、理由を問わず警察に通報いたします。</p><p>※キャストが喋っている途中の発言はおやめください。</p></div></details><details><summary><span class="guide-index">05</span><span>お手洗い・途中リタイア・設備について</span><span class="guide-toggle" aria-hidden="true"></span></summary><div class="guide-body"><p>※途中リタイアは不可となっております。（緊急を要する場合は公演を止めて対処させていただきます。）</p><p>※必ず公演前にお手洗いはお済ませください。</p><p>※アトラクション内の電球や照明には危険ですので決して触らないでください。</p><p>※アトラクション内の美術品（小道具）を投げる、壊す等の行為は内容の中にありません。</p><p>※美術品（小道具）を故意に破損した場合は実費での請求になりますのでご注意ください。</p><p>※扉や襖を力ずくで抑える行為は破損の原因となりますのでおやめください。</p><p>※一部壁の表面が剥がれやすくなっています。壁にもたれる、壁を剥がす行為はおやめください。</p><p>※お客様の行動次第(床に這いずる、汚れた物に触る等)で服が汚れる可能性がございます。ご注意下さい。</p></div></details><details><summary><span class="guide-index">06</span><span>ネタバレ・リピート参加・演出変更</span><span class="guide-toggle" aria-hidden="true"></span></summary><div class="guide-body"><p>※本公演はネタバレは禁止となります。SNS等で演出の詳細や謎解きに関しての言及はお控えください。</p><p>※<strong>2回目以降のお客様は初回のお客様にネタバレの内容を伝えない様ご協力お願いします。</strong></p><p>※クリア者が再度プレイする事は可能ですが、未クリア者の手助けをしないでください。</p><p>(具体例：アイテムの場所を教える、場の雰囲気が壊れる様な行為) そのような行為が発覚した場合は 運営の判断で今後予約いただいても参加をお断りする事があります。</p><p>※本公演は予告なく演出を変更する場合がございます。</p></div></details></div><div id="contact" class="guide-contact reveal"><span class="mono">QUESTIONS / CONTACT</span><h3>お問い合わせ</h3><dl class="contact-methods"><div><dt>E-MAIL :</dt><dd><a href="mailto:yonigenoie@gmail.com">yonigenoie@gmail.com</a></dd></div><div><dt>TEL：</dt><dd><a href="tel:08070225442">080-7022-5442</a></dd></div></dl><a class="guide-top-link" href="#tickets">チケット概要へ戻る ↑</a></div></section>
+</main>
+<footer><a href="#" class="footer-title">ジョン・ドゥの最終陳述</a><div class="footer-controls"><button data-motion class="utility" aria-pressed="true">MOTION <b>ON</b></button><a href="#" class="utility">BACK TO TOP ↑</a></div><p>DESIGN CONCEPT · 12/11（金）〜12/29（火）の15日間・全90公演。<br><span class="mono">JOHN DOE’S FINAL STATEMENT / CONCEPT PREVIEW</span></p></footer>
+<dialog id="kv-dialog" aria-labelledby="kv-title"><div class="dialog-bar mono"><span id="kv-title">KEY VISUAL / ジョン・ドゥの最終陳述</span><button class="close-dialog" aria-label="キービジュアルを閉じる">×</button></div><img class="kv-modal-image" src="kv.jpg" alt="ジョン・ドゥの最終陳述 キービジュアル"><button class="dialog-bottom close-dialog">閉じる <span>↵</span></button></dialog><dialog id="officer-dialog-miyoshi" class="officer-dialog" aria-labelledby="officer-title-miyoshi">
+<div class="dialog-bar mono"><span>OFFICER_01 / PERSONNEL FILE</span><button type="button" class="close-dialog" aria-label="捜査員紹介を閉じる">×</button></div>
+<div class="dialog-content"><img class="officer-dialog-photo" src="officer-2.jpg" alt="三芳 悠の制服写真">
+<div class="officer-dialog-copy"><p class="eyebrow red">PERSONNEL FILE / 捜査員紹介</p><h2 id="officer-title-miyoshi">三芳 悠</h2><p class="officer-dialog-english mono">MIYOSHI HARUKA</p>
+<dl class="dialog-details officer-dialog-details"><div><dt>所属</dt><dd>警視庁刑事部捜査第一課</dd></div><div><dt>階級・年齢</dt><dd>巡査部長 ／ 30歳</dd></div><div><dt>担当キャスト</dt><dd>かすが</dd></div></dl>
+<div class="officer-dialog-description"><p>冷静沈着で、取り調べに長けた刑事。</p><p>通信指令本部での経験を生かし、複雑な話からも必要な情報を的確に整理する。</p><p>いつでも落ち着いた対応で、あなたの捜査を支える。</p></div>
+<details class="officer-inline-schedule"><summary>臨場日・出演日程を見る</summary><p class="cast-officer-label">刑事役としての出演日</p><ul class="cast-date-list"><li>12/12（土）</li><li>12/19（土）</li><li>12/25（金）</li></ul><p class="cast-officer-times">各日6公演<br>11:00 ／ 12:40 ／ 14:20<br>16:00 ／ 17:40 ／ 19:20</p></details>
+</div></div><button type="button" class="dialog-bottom close-dialog">ファイルを閉じる <span>↵</span></button></dialog><dialog id="officer-dialog-todo" class="officer-dialog" aria-labelledby="officer-title-todo">
+<div class="dialog-bar mono"><span>OFFICER_02 / PERSONNEL FILE</span><button type="button" class="close-dialog" aria-label="捜査員紹介を閉じる">×</button></div>
+<div class="dialog-content"><img class="officer-dialog-photo" src="officer-3.jpg" alt="東堂 馨の制服写真">
+<div class="officer-dialog-copy"><p class="eyebrow red">PERSONNEL FILE / 捜査員紹介</p><h2 id="officer-title-todo">東堂 馨</h2><p class="officer-dialog-english mono">TODO KAORU</p>
+<dl class="dialog-details officer-dialog-details"><div><dt>所属</dt><dd>警視庁刑事部捜査第一課</dd></div><div><dt>階級・年齢</dt><dd>警部補 ／ 35歳</dd></div><div><dt>担当キャスト</dt><dd>アガスケ</dd></div></dl>
+<div class="officer-dialog-description"><p>穏やかな人柄で、周囲を安心させる刑事。</p><p>機動隊で培った体力と行動力を備え、いざというときには真っ先に前へ出る。</p><p>相談にも親身に耳を傾けてくれる、頼れる存在。</p></div>
+<details class="officer-inline-schedule"><summary>臨場日・出演日程を見る</summary><p class="cast-officer-label">刑事役としての出演日</p><ul class="cast-date-list"><li>12/26（土）</li><li>12/27（日）</li></ul><p class="cast-officer-times">各日6公演<br>11:00 ／ 12:40 ／ 14:20<br>16:00 ／ 17:40 ／ 19:20</p></details>
+</div></div><button type="button" class="dialog-bottom close-dialog">ファイルを閉じる <span>↵</span></button></dialog><dialog id="officer-dialog-amamiya" class="officer-dialog" aria-labelledby="officer-title-amamiya">
+<div class="dialog-bar mono"><span>OFFICER_03 / PERSONNEL FILE</span><button type="button" class="close-dialog" aria-label="捜査員紹介を閉じる">×</button></div>
+<div class="dialog-content"><img class="officer-dialog-photo" src="officer-1.png" alt="雨宮 律の制服写真">
+<div class="officer-dialog-copy"><p class="eyebrow red">PERSONNEL FILE / 捜査員紹介</p><h2 id="officer-title-amamiya">雨宮 律</h2><p class="officer-dialog-english mono">AMAMIYA RITSU</p>
+<dl class="dialog-details officer-dialog-details"><div><dt>所属</dt><dd>警視庁刑事部捜査第一課</dd></div><div><dt>階級・年齢</dt><dd>巡査部長 ／ 32歳</dd></div><div><dt>担当キャスト</dt><dd>塁</dd></div></dl>
+<div class="officer-dialog-description"><p>明るく気さくで、面倒見のいい兄貴肌の刑事。</p><p>少年係での勤務経験があり、相手と同じ目線で話すことを大切にしている。</p><p>初めての合同捜査でも自然に声をかけ、あなたを仲間の輪へ迎えてくれる。</p></div>
+<details class="officer-inline-schedule"><summary>臨場日・出演日程を見る</summary><p class="cast-officer-label">刑事役としての出演日</p><ul class="cast-date-list"><li>12/20（日）</li><li>12/21（月）</li></ul><p class="cast-officer-times">各日6公演<br>11:00 ／ 12:40 ／ 14:20<br>16:00 ／ 17:40 ／ 19:20</p></details>
+</div></div><button type="button" class="dialog-bottom close-dialog">ファイルを閉じる <span>↵</span></button></dialog><dialog id="officer-dialog-fujita" class="officer-dialog" aria-labelledby="officer-title-fujita">
+<div class="dialog-bar mono"><span>OFFICER_04 / PERSONNEL FILE</span><button type="button" class="close-dialog" aria-label="捜査員紹介を閉じる">×</button></div>
+<div class="dialog-content"><img class="officer-dialog-photo" src="officer-5.jpg" alt="藤田 伊織の制服写真">
+<div class="officer-dialog-copy"><p class="eyebrow red">PERSONNEL FILE / 捜査員紹介</p><h2 id="officer-title-fujita">藤田 伊織</h2><p class="officer-dialog-english mono">FUJITA IORI</p>
+<dl class="dialog-details officer-dialog-details"><div><dt>所属</dt><dd>警視庁刑事部捜査第一課</dd></div><div><dt>階級・年齢</dt><dd>巡査部長 ／ 32歳</dd></div><div><dt>担当キャスト</dt><dd>魔都</dd></div></dl>
+<div class="officer-dialog-description"><p>物腰が柔らかく、周囲への気配りを忘れない刑事。</p><p>鑑識の経験を持ち、指紋や足跡など、現場に残された小さな痕跡にも強い。</p><p>あなたが見つけた手がかりにも丁寧に向き合い、ともに捜査を進める。</p></div>
+<details class="officer-inline-schedule"><summary>臨場日・出演日程を見る</summary><p class="cast-officer-label">刑事役としての出演日</p><ul class="cast-date-list"><li>12/13（日）</li><li>12/14（月）</li></ul><p class="cast-officer-times">各日6公演<br>11:00 ／ 12:40 ／ 14:20<br>16:00 ／ 17:40 ／ 19:20</p></details>
+</div></div><button type="button" class="dialog-bottom close-dialog">ファイルを閉じる <span>↵</span></button></dialog><dialog id="officer-dialog-iura" class="officer-dialog" aria-labelledby="officer-title-iura">
+<div class="dialog-bar mono"><span>OFFICER_05 / PERSONNEL FILE</span><button type="button" class="close-dialog" aria-label="捜査員紹介を閉じる">×</button></div>
+<div class="dialog-content"><img class="officer-dialog-photo" src="officer-4.jpg" alt="井浦 周の制服写真">
+<div class="officer-dialog-copy"><p class="eyebrow red">PERSONNEL FILE / 捜査員紹介</p><h2 id="officer-title-iura">井浦 周</h2><p class="officer-dialog-english mono">IURA AMANE</p>
+<dl class="dialog-details officer-dialog-details"><div><dt>所属</dt><dd>警視庁刑事部捜査第一課〈警察庁より出向〉</dd></div><div><dt>階級・年齢</dt><dd>警部 ／ 27歳</dd></div><div><dt>担当キャスト</dt><dd>MARIN</dd></div></dl>
+<div class="officer-dialog-description"><p>若くして捜査第一課の係長を務める、聡明な刑事。</p><p>状況を素早く把握し、的確な指示で現場をまとめる。</p><p>落ち着いた立ち居振る舞いと責任感で、捜査に挑むあなたを導く。</p></div>
+<details class="officer-inline-schedule"><summary>臨場日・出演日程を見る</summary><p class="cast-officer-label">刑事役としての出演日</p><ul class="cast-date-list"><li>12/11（金）</li><li>12/17（木）</li><li>12/18（金）</li><li>12/24（木）</li><li>12/28（月）</li><li>12/29（火）</li></ul><p class="cast-officer-times">各日6公演<br>11:00 ／ 12:40 ／ 14:20<br>16:00 ／ 17:40 ／ 19:20</p></details>
+</div></div><button type="button" class="dialog-bottom close-dialog">ファイルを閉じる <span>↵</span></button></dialog><dialog id="officer-schedule-dialog" aria-labelledby="officer-schedule-title"><div class="dialog-bar mono"><span>PERSONNEL FILE / SCHEDULE</span><button type="button" class="close-dialog" aria-label="出演日程を閉じる">×</button></div><div class="officer-schedule-content"><p class="eyebrow red">SCHEDULE / 臨場予定</p><h2 id="officer-schedule-title">臨場予定／出演日程</h2><p class="cast-schedule-intro">12/11（金）〜12/29（火）の15日間。<br>各日6公演。日付ごとの出演キャストをご確認ください。</p><div class="cast-table-wrap"><table class="cast-schedule-table"><caption>12月のキャスト出演日程</caption><thead><tr><th scope="col">日付</th><th scope="col">謎の男</th><th scope="col">刑事役<small>アテンド</small></th></tr></thead><tbody><tr><th scope="row">12/11<span>（金）</span></th><td>春日</td><td>MARIN<small>井浦 周</small></td></tr><tr><th scope="row">12/12<span>（土）</span></th><td>雨澤</td><td>春日<small>三芳 悠</small></td></tr><tr><th scope="row">12/13<span>（日）</span></th><td>後藤</td><td>松田<small>藤田 伊織</small></td></tr><tr><th scope="row">12/14<span>（月）</span></th><td>米川</td><td>松田<small>藤田 伊織</small></td></tr><tr><th scope="row">12/17<span>（木）</span></th><td>米川</td><td>MARIN<small>井浦 周</small></td></tr><tr><th scope="row">12/18<span>（金）</span></th><td>春日</td><td>MARIN<small>井浦 周</small></td></tr><tr><th scope="row">12/19<span>（土）</span></th><td>雨澤</td><td>春日<small>三芳 悠</small></td></tr><tr><th scope="row">12/20<span>（日）</span></th><td>松田</td><td>米川<small>雨宮 律</small></td></tr><tr><th scope="row">12/21<span>（月）</span></th><td>後藤</td><td>米川<small>雨宮 律</small></td></tr><tr><th scope="row">12/24<span>（木）</span></th><td>米川</td><td>MARIN<small>井浦 周</small></td></tr><tr><th scope="row">12/25<span>（金）</span></th><td>雨澤</td><td>春日<small>三芳 悠</small></td></tr><tr><th scope="row">12/26<span>（土）</span></th><td>春日</td><td>後藤<small>東堂 馨</small></td></tr><tr><th scope="row">12/27<span>（日）</span></th><td>松田</td><td>後藤<small>東堂 馨</small></td></tr><tr><th scope="row">12/28<span>（月）</span></th><td>松田</td><td>MARIN<small>井浦 周</small></td></tr><tr><th scope="row">12/29<span>（火）</span></th><td>後藤</td><td>MARIN<small>井浦 周</small></td></tr></tbody></table></div><div class="cast-daily-times"><h3>各日の公演時間</h3><ol><li><span>第1回</span>11:00</li><li><span>第2回</span>12:40</li><li><span>第3回</span>14:20</li><li><span>第4回</span>16:00</li><li><span>第5回</span>17:40</li><li><span>第6回</span>19:20</li></ol><p>所要時間：約80分 ／ 各回定員：6名</p></div></div><button type="button" class="dialog-bottom close-dialog">ファイルを閉じる <span>↵</span></button></dialog><dialog id="file-dialog" aria-labelledby="dialog-title"><div class="dialog-bar mono"><span id="dialog-file">SUBJECT_01 / CLASSIFIED</span><button class="close-dialog" aria-label="閉じる">×</button></div><div class="dialog-content"><div id="dialog-photo" class="dialog-photo p1" role="img" aria-label="人物の捜査写真"></div><div><p class="eyebrow red">PERSON FILE / 供述記録</p><h2 id="dialog-title">謎の男</h2><blockquote id="dialog-quote"></blockquote><dl class="dialog-details"><div><dt>IDENTITY</dt><dd>UNKNOWN</dd></div><div><dt>VERIFICATION</dt><dd class="red">PENDING</dd></div></dl><p class="concept-note">殺人を自供する身元不明の男。<br>その素性も動機も明らかになっていない。</p></div></div><button class="dialog-bottom close-dialog">ファイルを閉じる <span>↵</span></button></dialog>
+
+<div id="tap-point-marker" aria-hidden="true" hidden></div>
+<script>
+// Keep point feedback available even if another page feature fails to initialize.
+(() => {
+  const marker = document.getElementById('tap-point-marker');
+  let hideTimer = 0, origin = null, lastDirectAt = -Infinity;
+  const options = { capture: true, passive: true };
+  function hide() {
+    clearTimeout(hideTimer);
+    marker.hidden = true;
+  }
+  function show(x, y, target) {
+    if (!Number.isFinite(x) || !Number.isFinite(y) || document.hidden) return;
+    if (document.body.classList.contains('motion-off')) return;
+    if (target instanceof Element && target.closest('#motion, [data-motion], input, textarea, select, [contenteditable="true"]')) return;
+    clearTimeout(hideTimer);
+    marker.style.left = x + 'px';
+    marker.style.top = y + 'px';
+    marker.hidden = false;
+    hideTimer = setTimeout(hide, 700);
+  }
+  function begin(x, y, target) {
+    lastDirectAt = performance.now();
+    origin = { x, y, target, moved: false };
+    show(x, y, target);
+  }
+  function move(x, y) {
+    if (origin && Math.hypot(x - origin.x, y - origin.y) > 12) {
+      origin.moved = true;
+      hide();
+    }
+  }
+  function end(x, y) {
+    lastDirectAt = performance.now();
+    if (origin && !origin.moved) show(x, y, origin.target);
+    origin = null;
+  }
+  function cancel() { lastDirectAt = performance.now(); origin = null; hide(); }
+  // Register touch events alongside pointer events: do not assume feature support
+  // means a preview surface will deliver a particular event family.
+  document.addEventListener('pointerdown', event => {
+    if (event.button > 0) return;
+    if (event.isPrimary === false) { cancel(); return; }
+    begin(event.clientX, event.clientY, event.target);
+  }, options);
+  document.addEventListener('pointermove', event => move(event.clientX, event.clientY), options);
+  document.addEventListener('pointerup', event => end(event.clientX, event.clientY), options);
+  document.addEventListener('pointercancel', cancel, options);
+  document.addEventListener('touchstart', event => {
+    if (event.touches.length !== 1) { cancel(); return; }
+    const touch = event.touches[0];
+    begin(touch.clientX, touch.clientY, event.target);
+  }, options);
+  document.addEventListener('touchmove', event => {
+    if (event.touches.length !== 1) { cancel(); return; }
+    const touch = event.touches[0];
+    move(touch.clientX, touch.clientY);
+  }, options);
+  document.addEventListener('touchend', event => {
+    const touch = event.changedTouches[0];
+    if (touch) end(touch.clientX, touch.clientY);
+  }, options);
+  document.addEventListener('touchcancel', cancel, options);
+  document.addEventListener('click', event => {
+    if (event.button > 0) return;
+    if (event.detail === 0 && event.clientX === 0 && event.clientY === 0 && event.target instanceof Element) {
+      const rect = event.target.getBoundingClientRect();
+      show(rect.left + rect.width / 2, rect.top + rect.height / 2, event.target);
+    } else if (performance.now() - lastDirectAt > 900) show(event.clientX, event.clientY, event.target);
+  }, options);
+  document.addEventListener('scroll', () => { if (origin) origin.moved = true; hide(); }, options);
+  document.addEventListener('jd:motion-change', () => {
+    if (document.body.classList.contains('motion-off')) cancel();
+  });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) cancel(); });
+  window.addEventListener('pagehide', cancel);
+})();
+</script>
+<script>
+'use strict';
+const body = document.body;
+const motionButtons = document.querySelectorAll('#motion, [data-motion]');
+let motionOff = false;
+function listenMedia(query, callback) {
+  if (query.addEventListener) query.addEventListener('change', callback);
+  else if (query.addListener) query.addListener(callback);
+}
+function applyMotion() {
+  body.classList.toggle('motion-off', motionOff);
+  body.classList.toggle('motion-on', !motionOff);
+  document.documentElement.style.scrollBehavior = motionOff ? 'auto' : '';
+  motionButtons.forEach(button => {
+    button.setAttribute('aria-pressed', String(!motionOff));
+    button.innerHTML = `MOTION <b>${motionOff ? 'OFF' : 'ON'}</b>`;
+    button.setAttribute('aria-label', motionOff ? '動きを再開する' : '動きを停止する');
+  });
+  document.dispatchEvent(new Event('jd:motion-change'));
+}
+function chooseMotion(enabled) {
+  motionOff = !enabled;
+  applyMotion();
+}
+applyMotion();
+motionButtons.forEach(button => button.addEventListener('click', () => chooseMotion(motionOff)));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  }), { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+} else document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+const subjects = [["謎の男", "「僕がやりました」"], ["謎の男", "「僕がやりました」"], ["謎の男", "「僕がやりました」"], ["謎の男", "「僕がやりました」"], ["謎の男", "「僕がやりました」"], ["謎の男", "「僕がやりました」"]];
+const fileDialog = document.querySelector('#file-dialog');
+
+let lastFocus;
+function openDialog(dialog) {
+  lastFocus = document.activeElement;
+  dialog.showModal(); body.classList.add('dialog-open'); playTone();
+}
+document.querySelectorAll('[data-person]').forEach(button => button.addEventListener('click', () => {
+  const n = Number(button.dataset.person);
+  document.querySelector('#dialog-file').textContent = `SUBJECT_0${n + 1} / CLASSIFIED`;
+  document.querySelector('#dialog-title').textContent = subjects[n][0];
+  document.querySelector('#dialog-quote').textContent = subjects[n][1];
+  document.querySelector('#dialog-photo').className = `dialog-photo p${n + 1}`;
+  openDialog(fileDialog);
+}));
+
+
+document.querySelectorAll('dialog').forEach(dialog => {
+  dialog.querySelectorAll('.close-dialog').forEach(button => button.addEventListener('click', () => dialog.close()));
+  dialog.addEventListener('click', e => {
+    const r = dialog.getBoundingClientRect();
+    if (e.target === dialog && (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom)) dialog.close();
+  });
+  dialog.addEventListener('close', () => { body.classList.remove('dialog-open'); lastFocus?.focus(); });
+});
+let soundEnabled = false, audioContext;
+const soundButton = document.querySelector('#sound');
+function playTone() {
+  if (!soundEnabled || !audioContext) return;
+  const oscillator = audioContext.createOscillator(), gain = audioContext.createGain();
+  oscillator.type = 'sine'; oscillator.frequency.setValueAtTime(540, audioContext.currentTime);
+  oscillator.frequency.exponentialRampToValueAtTime(280, audioContext.currentTime + .09);
+  gain.gain.setValueAtTime(.025, audioContext.currentTime);
+  gain.gain.exponentialRampToValueAtTime(.001, audioContext.currentTime + .12);
+  oscillator.connect(gain); gain.connect(audioContext.destination);
+  oscillator.start(); oscillator.stop(audioContext.currentTime + .13);
+}
+soundButton.addEventListener('click', async () => {
+  try {
+    if (!audioContext) { const Audio = window.AudioContext || window.webkitAudioContext; if (!Audio) return; audioContext = new Audio(); }
+    await audioContext.resume(); soundEnabled = !soundEnabled;
+    soundButton.setAttribute('aria-pressed', String(soundEnabled));
+    soundButton.querySelector('b').textContent = soundEnabled ? 'ON' : 'OFF';
+    soundButton.setAttribute('aria-label', soundEnabled ? '効果音をオフにする' : '効果音をオンにする');
+    playTone();
+  } catch { soundButton.setAttribute('aria-label', 'このブラウザでは効果音を利用できません'); }
+});
+const logs = ['Identity verification failed.', 'Statement recovered. Truth: unresolved.', 'Evidence integrity check... incomplete.', 'Waiting for your investigation.'];
+let logIndex = 0;
+setInterval(() => {
+  if (motionOff || document.hidden) return;
+  logIndex = (logIndex + 1) % logs.length;
+  document.querySelector('#terminal-text').textContent = logs[logIndex];
+}, 4200);
+const siteMenu = document.querySelector('#site-menu');
+const menuToggle = document.querySelector('#menu-toggle');
+const mobileMenu = document.querySelector('#mobile-menu');
+function syncMenu() {
+  menuToggle.setAttribute('aria-expanded', String(siteMenu.open));
+  menuToggle.setAttribute('aria-label', siteMenu.open ? 'メニューを閉じる' : 'メニューを開く');
+}
+function setMenu(open, returnFocus = false) {
+  siteMenu.open = open;
+  syncMenu();
+  if (returnFocus) menuToggle.focus();
+}
+siteMenu.addEventListener('toggle', syncMenu);
+syncMenu();
+mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && siteMenu.open) setMenu(false, true);
+});
+document.addEventListener('click', event => {
+  if (siteMenu.open && !siteMenu.contains(event.target)) setMenu(false);
+});
+listenMedia(window.matchMedia('(min-width: 701px)'), event => { if (event.matches) setMenu(false); });
+
+// Signal feedback uses DOM/CSS so it does not depend on canvas or popovers.
+(() => {
+  const mainLayer = document.querySelector('.signal-overlay');
+  const layers = [mainLayer];
+  document.querySelectorAll('dialog').forEach(dialog => {
+    const layer = mainLayer.cloneNode(true);
+    layer.classList.add('signal-dialog');
+    dialog.append(layer);
+    layers.push(layer);
+  });
+  let timer = 0, hit = null;
+  const duration = 640;
+  let shakeFrame = 0;
+  const shakeSurfaces = Array.from(new Set([
+    document.querySelector('.header'),
+    document.querySelector('main#main') || document.querySelector('main'),
+    document.querySelector('footer'),
+    ...document.querySelectorAll('dialog')
+  ].filter(Boolean)));
+  const savedTransforms = new Map();
+  function stop() {
+    clearTimeout(timer);
+    body.classList.remove('signal-shaking');
+    cancelAnimationFrame(shakeFrame);
+    savedTransforms.forEach(({ value, priority }, node) => {
+      if (value) node.style.setProperty('transform', value, priority);
+      else node.style.removeProperty('transform');
+    });
+    savedTransforms.clear();
+    layers.forEach(layer => layer.removeAttribute('data-active'));
+    hit?.classList.remove('signal-hit');
+    hit = null;
+  }
+  function shakeScreen() {
+    const distance = innerWidth <= 700 ? 14 : 20;
+    const positions = [
+      [0, -1], [.09, 1], [.2, -.85], [.33, .65],
+      [.48, -.45], [.64, .3], [.82, -.15], [1, 0]
+    ];
+    // Write visible offsets directly; CSS/WAAPI animation settings cannot suppress them.
+    shakeSurfaces.forEach(node => savedTransforms.set(node, {
+      value: node.style.getPropertyValue('transform'),
+      priority: node.style.getPropertyPriority('transform')
+    }));
+    const begun = performance.now();
+    const draw = now => {
+      const progress = Math.min(1, (now - begun) / 600);
+      const next = positions.findIndex(point => point[0] >= progress);
+      const right = Math.max(1, next === -1 ? positions.length - 1 : next);
+      const [a, b] = [positions[right - 1], positions[right]];
+      const t = (progress - a[0]) / (b[0] - a[0]);
+      const x = distance * (a[1] + (b[1] - a[1]) * t);
+      shakeSurfaces.forEach(node => { node.style.setProperty('transform', `translate3d(${x}px, 0, 0)`, 'important'); });
+      if (progress < 1 && !motionOff) shakeFrame = requestAnimationFrame(draw);
+    };
+    draw(begun);
+  }
+  function start(event) {
+    const target = event.target instanceof Element ? event.target : null;
+    if (!target || event.button > 0 || document.hidden) return;
+    if (target.closest('#motion, [data-motion], input, textarea, select, [contenteditable="true"]')) return;
+    if (motionOff) return;
+    stop();
+    const bounds = target.getBoundingClientRect();
+    const keyboard = event.type === 'click' && event.detail === 0;
+    const x = keyboard ? bounds.left + bounds.width / 2 : event.clientX;
+    const y = keyboard ? bounds.top + bounds.height / 2 : event.clientY;
+    layers.forEach(layer => {
+      layer.style.setProperty('--tap-x', `${Math.max(0, Math.min(innerWidth, x))}px`);
+      layer.style.setProperty('--tap-y', `${Math.max(0, Math.min(innerHeight, y))}px`);
+    });
+    // Restart one effect, including when taps arrive faster than its duration.
+    void mainLayer.offsetWidth;
+    body.classList.add('signal-shaking');
+    if (!target.closest('#site-menu')) shakeFrame = requestAnimationFrame(shakeScreen);
+    layers.forEach(layer => layer.setAttribute('data-active', ''));
+    hit = target.closest('a, button, summary');
+    hit?.classList.add('signal-hit');
+    timer = setTimeout(stop, duration);
+  }
+  // Track direct taps, including non-interactive areas, without treating scrolling as a tap.
+  let tap = null, lastDirectAt = -Infinity;
+  const passiveCapture = { capture: true, passive: true };
+  function beginTap(id, x, y, target) {
+    tap = { id, x, y, target, time: performance.now(), moved: false };
+  }
+  function moveTap(id, x, y) {
+    if (tap && tap.id === id && Math.hypot(x - tap.x, y - tap.y) > 12) tap.moved = true;
+  }
+  function finishTap(id, x, y) {
+    const previous = tap;
+    tap = null;
+    lastDirectAt = performance.now();
+    if (!previous || previous.id !== id || previous.moved ||
+        Math.hypot(x - previous.x, y - previous.y) > 12 ||
+        lastDirectAt - previous.time > 900) return;
+    start({ target: previous.target, type: 'tap', button: 0, clientX: x, clientY: y });
+  }
+  function cancelTap() { tap = null; lastDirectAt = performance.now(); }
+  if ('PointerEvent' in window) {
+    document.addEventListener('pointerdown', event => {
+      if (!event.isPrimary) { cancelTap(); return; }
+      if (event.pointerType === 'mouse') return;
+      beginTap(event.pointerId, event.clientX, event.clientY, event.target);
+    }, passiveCapture);
+    document.addEventListener('pointermove', event => moveTap(event.pointerId, event.clientX, event.clientY), passiveCapture);
+    document.addEventListener('pointerup', event => {
+      if (event.pointerType !== 'mouse') finishTap(event.pointerId, event.clientX, event.clientY);
+    }, passiveCapture);
+    document.addEventListener('pointercancel', cancelTap, passiveCapture);
+  } else {
+    // Touch fallback for browsers without Pointer Events.
+    document.addEventListener('touchstart', event => {
+      if (event.touches.length !== 1) { cancelTap(); return; }
+      const touch = event.touches[0];
+      beginTap(touch.identifier, touch.clientX, touch.clientY, event.target);
+    }, passiveCapture);
+    document.addEventListener('touchmove', event => {
+      if (event.touches.length !== 1) { cancelTap(); return; }
+      const touch = event.touches[0];
+      moveTap(touch.identifier, touch.clientX, touch.clientY);
+    }, passiveCapture);
+    document.addEventListener('touchend', event => {
+      const touch = event.changedTouches[0];
+      if (touch) finishTap(touch.identifier, touch.clientX, touch.clientY);
+    }, passiveCapture);
+    document.addEventListener('touchcancel', cancelTap, passiveCapture);
+  }
+  document.addEventListener('scroll', () => { if (tap) tap.moved = true; }, passiveCapture);
+  document.addEventListener('click', event => {
+    // Ignore the compatibility click after touch, while retaining keyboard activation.
+    if (event.detail === 0 && event.clientX === 0 && event.clientY === 0 && !event.sourceCapabilities?.firesTouchEvents && event.pointerType !== 'touch') start(event);
+    else if (performance.now() - lastDirectAt > 900) start(event);
+  }, passiveCapture);
+  document.addEventListener('jd:motion-change', () => { if (motionOff) stop(); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
+  window.addEventListener('pagehide', stop);
+})();
+
+</script>
+<script>document.querySelector("[data-kv]").addEventListener("click",()=>openDialog(document.getElementById("kv-dialog")));</script><script>
+document.querySelectorAll('[data-officer-dialog]').forEach(button => {
+  button.addEventListener('click', () => openDialog(document.getElementById('officer-dialog-' + button.dataset.officerDialog)));
+});
+document.querySelectorAll('[data-officer-schedule]').forEach(button => button.addEventListener('click', () => openDialog(document.getElementById('officer-schedule-dialog'))));
+</script></body></html>
