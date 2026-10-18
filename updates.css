@@ -1,0 +1,106 @@
+/* v23: retain the v14 layout and controls; only update supplied assets/content. */
+:root{--red:#ec1641;--line:#34313d;--muted:#929098}
+.data-wall{background-image:url('assets/window-01-system-error-404-glitch-modern.png');background-size:1280px auto;opacity:.10}
+.hero .profile{filter:brightness(.88) saturate(.85);border-color:#84626f}.hero .profile:hover{filter:brightness(1.12) saturate(1)}
+.portrait.p1,.file-photo.p1,.dialog-photo.p1{background-image:url('assets/subject-yonekawa.png')}
+.portrait.p2,.file-photo.p2,.dialog-photo.p2{background-image:url('assets/subject-kasuga.png')}
+.portrait.p3,.file-photo.p3,.dialog-photo.p3{background-image:url('assets/subject-goto.png')}
+.portrait.p4,.file-photo.p4,.dialog-photo.p4{background-image:url('assets/subject-marin.png')}
+.portrait.p5,.file-photo.p5,.dialog-photo.p5{background-image:url('assets/subject-matsuda.png')}
+.portrait,.file-photo{background-size:117% auto!important;background-position:50% 36%!important}
+.dialog-photo{aspect-ratio:.86;background-size:116% auto!important;background-position:50% 0!important;background-color:#000;filter:none}
+.character-strip .file-photo{background-size:auto 155%!important;background-position:50% 45%!important}
+.hero .profile-6{display:block;background:#020305}.unknown-photo{aspect-ratio:1.42;display:flex;flex-direction:column;align-items:center;justify-content:center;font:12px var(--mono);gap:8px;letter-spacing:2px}.unknown-photo small{font-size:5px;color:#8c8790;letter-spacing:1px}
+.overview-content{margin:34px 0 40px;display:grid;grid-template-columns:1fr 1fr;gap:8%;border-bottom:1px solid var(--line);padding-bottom:36px}.overview-content h2{font:500 25px/1.8 var(--serif);margin:15px 0}.overview-content p{font:13px/2.5 var(--serif);color:#b8b3bd;margin:0 0 18px}.overview-content p:last-child{color:#e6dfe4}.overview-content .eyebrow{font-size:8px;color:#b53453}
+.story-heading h2.updated-quote{font-size:clamp(30px,3.3vw,52px);white-space:nowrap}
+.file-intro{font:13px/2.2 var(--serif);color:#b6adb8;margin:20px 0 30px}.file-name small{display:block;font:8px var(--mono);letter-spacing:1px;color:#94818f;margin-top:5px}
+.staff-link{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px;margin:35px 0 20px;border:1px solid #775367;background:#180c1877}.staff-link strong{display:block;font:500 23px var(--serif);margin:12px 0}.staff-link p{font:12px/2.1 var(--serif);color:#aca1ad;margin:0}.staff-link .mono{font-size:8px;color:#d44469}.staff-link>b{font-size:28px;color:#c8325c;font-weight:400}
+.minor-characters{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin:35px 0 0}.minor-characters article{padding:20px 0;border-top:1px solid #47313f}.minor-characters h3{font:500 21px var(--serif);margin:0 0 15px}.minor-characters h3 small{font-size:12px;color:#9d8c99}.minor-characters p{font:12px/2.2 var(--serif);color:#b8adba}
+.immersive-copy{font:13px/2.4 var(--serif);color:#b6aeba;margin:25px 0 40px;max-width:900px}.immersive-copy h3{font-size:22px;font-weight:500;color:#e0d9e1}.immersive-copy p{margin-bottom:20px}
+.system-steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:25px}.system-steps h3{font-size:21px}.system-steps article{position:relative;isolation:isolate}.system-steps article:after{content:'';position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;opacity:.065;pointer-events:none}.system-steps article:nth-child(1):after{background-image:url('assets/window-03-file-not-found-glitch-modern.png')}.system-steps article:nth-child(2):after{background-image:url('assets/window-04-connection-lost-glitch-modern.png')}.system-steps article:nth-child(3):after{background-image:url('assets/window-05-data-corrupted-glitch-modern.png')}.system-steps article:nth-child(4):after{background-image:url('assets/window-06-unknown-error-glitch-modern.png')}
+.information-card-copy{border:1px solid #503348;padding:25px;margin:30px 0;background:#130b1499}.information-card-copy h3{font:500 22px var(--serif);margin:0 0 15px}.information-card-copy p,.experience-copy p{font:12px/2.3 var(--serif);color:#b8adbb;margin:0 0 10px}.experience-copy{padding:25px 0 0;border-top:1px solid #65233d;margin-top:35px}.experience-copy h3{font:500 22px var(--serif);margin:0 0 20px}
+.terminal{background-image:linear-gradient(#08070bf5,#08070bf5),url('assets/window-02-access-denied-glitch-modern.png')!important;background-size:cover}
+.kv-open{border:0;background:none;border-bottom:1px solid #773044;color:#b68499;font-size:9px;font-family:var(--serif);padding:0 0 5px}.kv-modal-image{display:block;width:100%;height:auto}#kv-dialog{width:min(1000px,94vw)}
+.staff-link:hover{border-color:#ca2455;background:#240e23}
+@media(min-width:701px) and (max-width:1050px){.system-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.overview-content{grid-template-columns:1fr;gap:15px;margin:28px 0 20px;padding-bottom:25px}.overview-content h2{font-size:23px;margin:8px 0}.overview-content p{font-size:12px;line-height:2.35}.story-heading h2.updated-quote{font-size:clamp(26px,8vw,36px);margin-bottom:45px}.system-steps{grid-template-columns:1fr;gap:20px}.system-steps h3{font-size:21px}.immersive-copy{font-size:12px;line-height:2.3;margin-bottom:30px}.immersive-copy h3{font-size:21px;line-height:1.8}.minor-characters{grid-template-columns:1fr;gap:10px}.staff-link{padding:20px;gap:16px;margin-top:28px}.staff-link strong{font-size:21px}.staff-link p{font-size:11px}.information-card-copy{padding:20px}.experience-copy p{font-size:11px}.dialog-photo{width:170px;aspect-ratio:.86}.hero .profile-6{display:none}.kv-open{font-size:8px}}
+
+/* Character section: text-only mystery man and selectable investigator records. */
+.mystery-man-copy{margin:28px 0 42px;padding:24px 0 26px;border-bottom:1px solid var(--line)}
+.mystery-man-copy h3,.officer-list-intro h3{font:500 24px/1.7 var(--serif);margin:0 0 15px}
+.mystery-man-copy p,.officer-list-intro>p:last-child{font:13px/2.4 var(--serif);color:#b8adba;margin:0}
+.officer-list-intro{margin:0 0 24px}.officer-list-intro .eyebrow{font-size:8px;color:#bb4964;margin-bottom:16px}
+.officer-list>.officer-file{display:flex;align-items:center;width:100%;padding:16px 21px 16px 10px;gap:24px;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);transition:background .25s,padding .25s}
+.officer-list>.officer-file:hover{background:#1a0d18;padding-left:18px}
+.officer-thumbnail{display:block;width:76px;height:86px;object-fit:cover;object-position:center 22%;flex-shrink:0;border:1px solid #4c3b47;filter:saturate(.7)}
+.officer-file .file-name{flex:1;min-width:0}.officer-file .file-name small{font-size:10px;line-height:1.7;letter-spacing:.03em;color:#a097a1;margin-top:9px}
+.officer-file .file-state{margin-left:0;white-space:nowrap;font-size:9px;color:#9a8b97}
+.officer-schedule-link{display:flex;justify-content:space-between;align-items:center;max-width:390px;margin:26px 0 0;padding:15px 18px;border:1px solid #634150;font:12px/1.8 var(--serif);color:#c7b7c2}
+.officer-schedule-link:hover{background:#1a0d18;border-color:#bd3c5f}
+@media(max-width:700px){.mystery-man-copy{margin:18px 0 30px;padding:20px 0}.mystery-man-copy h3,.officer-list-intro h3{font-size:22px}.mystery-man-copy p,.officer-list-intro>p:last-child{font-size:12px}.officer-list>.officer-file{gap:12px;padding:15px 7px 15px 0}.officer-list>.officer-file:hover{padding-left:6px}.officer-thumbnail{width:62px;height:76px}.officer-file .file-name small{font-size:9px;margin-top:7px}.officer-file .file-plus{margin-left:auto}.officer-schedule-link{font-size:11px}}
+
+/* Keep every supplied rule readable, with the requested emphasis. */
+.guide-body p{margin:0 0 18px;line-height:2.15}.guide-body p:last-child{margin-bottom:0}.guide-body strong{font-weight:700;color:#f1e9e8;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#a9475a}
+
+/* Supplied logo already contains the English subtitle. */
+.hero .english-title{display:none}
+.hero .supplied-title{filter:none;mix-blend-mode:normal}
+@media(max-width:700px){
+.hero{height:164vw;min-height:0;max-height:none}
+.hero .profile{display:block;width:29%}
+.hero .profile-1{left:3%;right:auto;top:2%}
+.hero .profile-2{left:35.5%;right:auto;top:2%}
+.hero .profile-3{left:68%;right:auto;top:2%;width:29%}
+.hero .profile-4{left:3%;right:auto;top:65%;width:29%}
+.hero .profile-5{display:block;left:35.5%;right:auto;top:65%;width:29%}
+.hero .profile-6{display:block;left:68%;right:auto;top:65%;width:29%}
+.hero .profile .portrait,.hero .unknown-photo{aspect-ratio:1.05}
+.hero .unknown-photo{font-size:9px;letter-spacing:1px;gap:7px}
+.hero .unknown-photo small{font-size:4px;letter-spacing:.5px}
+.hero .hero-prologue{top:25%;left:5%;right:5%;width:90%;font-size:clamp(9px,2.65vw,15px);text-align:center;line-height:1.65;letter-spacing:.1em}
+.hero .hero-copy h1{top:32%!important;left:3%;width:94%}
+.hero .hero-question{top:61%;font-size:clamp(10px,3.15vw,18px)}
+.hero .hero-ticket{top:89%;left:22%;width:56%}
+.hero .error-window{display:none}
+}
+
+/* Confirmed times and ticket prices. */
+.performance-times-compact{font-size:15px!important;line-height:2!important}
+.ticket-facts .ticket-approx{font:400 18px var(--serif);display:inline;margin-right:5px;color:inherit}
+.performance-schedule{border:1px solid var(--line);padding:24px;margin:0 0 28px;background:#0a090d99}
+.performance-schedule h3{font:500 19px var(--serif);margin:0 0 20px}
+.performance-schedule ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.performance-schedule li{display:flex;flex-direction:column;gap:9px;border-left:1px solid #674050;padding-left:16px}
+.performance-schedule li>span{font:10px var(--serif);color:#aa919f}
+.performance-schedule strong{font:400 24px var(--mono);letter-spacing:0;color:#e5dbe1}
+@media(max-width:700px){.performance-times-compact{font-size:11px!important}.performance-schedule{padding:20px}.performance-schedule ol{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 15px}.performance-schedule strong{font-size:24px}.ticket-facts .ticket-approx{font-size:15px}}
+
+/* The supplied portraits contain their own chrome; show the complete asset. */
+.hero button.profile{border:0;padding:0;background:transparent;box-shadow:none}
+.hero button.profile:hover{border:0;background:transparent;box-shadow:none}
+.hero .profile-image{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+a[href$="#amamiya"] .officer-thumbnail{background-color:#fff}
+@media(min-width:701px){.hero button.profile-5{top:auto;bottom:3%}}
+
+/* Personnel files share the mystery-man dialog chrome and close behavior. */
+.hero button.profile-6{background:transparent}
+.dialog-photo.p6{background-image:url('assets/subject-sixth.jpg');background-size:contain!important;background-position:center!important;aspect-ratio:1;border:0}
+[data-officer-dialog="amamiya"] .officer-thumbnail{background-color:#fff}
+.officer-dialog-photo{display:block;width:180px;max-width:100%;aspect-ratio:.85;object-fit:cover;object-position:center 20%;background:#fff;border:1px solid var(--line)}
+.officer-dialog-copy{min-width:0}
+.officer-dialog h2{margin-bottom:10px}
+.officer-dialog-english{color:#9c919d;margin:0 0 26px;font-size:9px;letter-spacing:.12em}
+.officer-dialog-details{margin:0 0 24px}
+.officer-dialog-details>div{display:block;margin-bottom:14px}
+.officer-dialog-details dt{font:10px/1.8 var(--serif);color:#9f8e9b;margin-bottom:3px}
+.officer-dialog-details dd{margin:0;text-align:left;font:12px/1.9 var(--serif);color:#d8ced6;overflow-wrap:anywhere}
+.officer-dialog-description{font:13px/2.25 var(--serif);color:#c1b5c2}
+.officer-dialog-description p{margin:0 0 15px}
+.officer-inline-schedule{border-top:1px solid var(--line);margin-top:26px;padding-top:18px;font:11px/2 var(--serif);color:#c7b7c2}
+.officer-inline-schedule summary{cursor:pointer}
+.officer-inline-schedule p{color:#9c919d;margin-bottom:0}
+.officer-schedule-link{width:100%;text-align:left;background:transparent}
+.officer-schedule-content{padding:34px;font:13px/2.2 var(--serif);color:#c1b5c2}
+.officer-schedule-content h2{color:var(--fg);font-weight:500;font-size:25px}
+@media(min-width:701px){.hero button.profile-6{top:auto;bottom:3%}}
+@media(max-width:700px){.officer-dialog-photo{width:160px}.officer-dialog-description{font-size:12px;line-height:2.25}.officer-dialog-details dd{font-size:12px}.officer-schedule-content{padding:25px}.officer-schedule-content h2{font-size:22px}}
